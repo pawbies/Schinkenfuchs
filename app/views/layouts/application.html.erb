@@ -8,6 +8,37 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta name="description" content="Webseite von Schinkenfuchs.">
+    <meta name="keywords" content="Websites, Webseiten, Schinkenfuchs">
+    <meta name="author" content="Alexander Fuchs, Elias Schinkinger">
+
+
+    <%# Open Graph %>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Schinkenfuchs">
+    <meta property="og:description" content="Webseite von Schinkenfuchs.">
+    <meta property="og:url" content="<%= request.original_url %>">
+    <meta property="og:image" content="<%= asset_path("shork.png") %>">
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="900">
+
+    <%# Twitter Card %>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Schinkenfuchs">
+    <meta name="twitter:description" content="Webseite von Schinkenfuchs.">
+    <meta name="twitter:image" content="<%= asset_path("shork.png") %>">
+
+    <%# JSON-LD %>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Schinkenfuchs",
+        "url": "<%= root_url %>",
+        "description": "Webseite von Schinkenfuchs.",
+      }
+    </script>
+
     <%= yield :head %>
 
     <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
