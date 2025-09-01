@@ -1,3 +1,12 @@
-<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="256" cy="256" r="256" fill="red"/>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3_58)">
+<rect width="512" height="512" fill="white"/>
+<path d="M366.573 405.474L213.019 224.589L385.645 83.1158H400L348.032 24L113 265.768L220.331 398.4L127.624 504L366.573 405.474Z" fill="#FFBB00"/>
+<path d="M392.427 77.5579L385.645 83.1158M385.645 83.1158L213.019 224.589L366.573 405.474L127.624 504L220.331 398.4L113 265.768L348.032 24L400 83.1158H385.645Z" stroke="#FFF600" stroke-width="25"/>
+</g>
+<defs>
+<clipPath id="clip0_3_58">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
 </svg>
