@@ -1,0 +1,5 @@
+de:
+  pages:
+    homepage:
+      title: "Startseite"
+      language: "Sprache: %{code}"
