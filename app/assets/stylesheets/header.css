@@ -68,11 +68,15 @@ nav {
   gap: 10px;
 }
 
-#mode-switch {
+.mode-switch {
   width: 2.25em;
   height: 2.25em;
 
   cursor: pointer;
+}
+
+.mode-switch-hidden {
+  display: none;
 }
 
 #get-website {

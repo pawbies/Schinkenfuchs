@@ -12,14 +12,18 @@
     <div class="nav-dot"></div>
     <span class="nav-link">Links</span>
   </div>
-  <div id="right-cont" data-controller="bulbSwitch">
+  <div id="right-cont" data-controller="bulb-switch">
     <%= image_tag 'lightbulb-dm.svg',
-      id: "mode-switch",
-      data: {
-        action: "click->bulbSwitch#swap",
-        dmbulb: asset_path('lightbulb-dm.svg'),
-        lmbulb: asset_path('lightbulb-lm.svg')
-      } %>
+      alt: t(".lightbulb_dm_alt"),
+      class: "mode-switch",
+      width: 150, height: 150,
+      data: { action: "click->bulb-switch#light", bulb_switch_target: "dark" } %>
+
+    <%= image_tag 'lightbulb-lm.svg',
+      alt: t(".lightbulb_lm_alt"),
+      class: "mode-switch mode-switch-hidden",
+      width: 150, height: 150,
+      data: { action: "click->bulb-switch#dark", bulb_switch_target: "light" } %>
 
     <%= link_to 'Website beantragen', root_path, id: "get-website" %>
   </div>
