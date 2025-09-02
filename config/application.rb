@@ -35,5 +35,11 @@ module Schinkenfuchs
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.i18n.available_locales = [ :en, :de ]
+    config.i18n.default_locale = :en
+
+    config.time_zone = "Vienna"
+    config.active_record.default_timezone = :utc
   end
 end
