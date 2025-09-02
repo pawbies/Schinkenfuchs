@@ -68,6 +68,11 @@ nav {
   gap: 10px;
 }
 
+#mode-switch {
+  width: 2.25em;
+  height: 2.25em;
+}
+
 #get-website {
   text-decoration: none;
   color: inherit;
