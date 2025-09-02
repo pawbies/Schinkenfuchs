@@ -12,8 +12,15 @@
     <div class="nav-dot"></div>
     <span class="nav-link">Links</span>
   </div>
-  <div id="right-cont">
-    <%= image_tag 'lightbulb-dm.svg', id: "mode-switch" %>
+  <div id="right-cont" data-controller="bulbSwitch">
+    <%= image_tag 'lightbulb-dm.svg',
+      id: "mode-switch",
+      data: {
+        action: "click->bulbSwitch#swap",
+        dmbulb: asset_path('lightbulb-dm.svg'),
+        lmbulb: asset_path('lightbulb-lm.svg')
+      } %>
+
     <%= link_to 'Website beantragen', root_path, id: "get-website" %>
   </div>
 </nav>
