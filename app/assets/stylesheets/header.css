@@ -9,8 +9,6 @@ nav {
 
   height: auto;
   width: 1250px;
-
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 1300px) {
@@ -19,8 +17,20 @@ nav {
   }
 }
 
+
+#mobile-activehuh {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: red;
+}
+
 @media screen and (max-width: 1024px) {
   /* MOBILE */
+  #mobile-activehuh {
+    color: green;
+}
 }
 
 #logo-cont{
