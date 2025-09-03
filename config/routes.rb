@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  root "pages#homepage"
+  scope "(:locale)", locale: /en|de|at/ do
+    root "pages#homepage"
+  end
 end

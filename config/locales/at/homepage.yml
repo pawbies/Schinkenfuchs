@@ -1,10 +1,10 @@
-de:
+at:
   pages:
     homepage:
       language: "Sprache: %{code}"
 
       slogan:
-        chill: "Gemütliche"
+        chill: "Gmiatliche"
         websites: "Webseiten"
-        for: "für"
-        you: "euch"
+        for: "fia"
+        you: "eich"
