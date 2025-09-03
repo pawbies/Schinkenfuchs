@@ -1,0 +1,11 @@
+en:
+  partials:
+    header:
+      others: "Other"
+      chill: "chill"
+      links: "links"
+
+      lightbulb_dm_alt: "Lightbulb switch dark"
+      lightbulb_lm_alt: "Lightbulb switch light"
+
+      request_website: "Request Website"

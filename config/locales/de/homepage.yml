@@ -1,5 +1,10 @@
 de:
   pages:
     homepage:
-      title: "Startseite"
       language: "Sprache: %{code}"
+
+      slogan:
+        chill: "Gmiatliche"
+        websites: "Webseiten"
+        for: "fia"
+        you: "eich"

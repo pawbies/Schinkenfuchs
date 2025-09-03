@@ -1,0 +1,11 @@
+de:
+  partials:
+    header:
+      others: "Andere"
+      chill: "gmiadliche"
+      links: "Links"
+
+      lightbulb_dm_alt: "Glühbirnen-Schalter dunkel"
+      lightbulb_lm_alt: "Glühbirnen-Schalter hell"
+
+      request_website: "Webseite beantragen"
