@@ -1,5 +1,4 @@
 <%# Header #%>
-<div id="mobile-activehuh">mobile?</div>
 <nav>
   <div id="logo-cont">
     <%= image_tag 'shork.png', id: "nav-logo" %>
@@ -28,3 +27,54 @@
     <%= link_to t(".request_website"), root_path, id: "get-website" %>
   </div>
 </nav>
+
+<!-- Mobile -->
+<div id="mobile-nav" data-controller="mobile-nav">
+  <div id="mobile-top">
+    <div id="mobile-logo-cont">
+      <%= image_tag 'shork.png', id: "mobile-logo" %>
+      <span id="mobile-nav-name">Schinkenfuchs</span>
+    </div>
+
+    <div id="mobile-burger-cont">
+      <div id="burger" data-action="click->mobile-nav#toggle">
+        <div class="burger-line" data-mobile-nav-target="burgerLine"></div>
+        <div class="burger-line" data-mobile-nav-target="burgerLine"></div>
+        <div class="burger-line short" data-mobile-nav-target="burgerLine"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobile-links" class="mobile-hidden" data-mobile-nav-target="links">
+    <div id="mobile-link-cont">
+      <div id="mobile-link-wrap">
+        <div id="spacing-mobilelink"></div>
+        <span class="mobile-nav-link"><%= t(".others") %></span>
+        <div class="line-mobile-link"></div>
+        <span class="mobile-nav-link"><%= t(".chill") %></span>
+        <div class="line-mobile-link"></div>
+        <span class="mobile-nav-link"><%= t(".links") %></span>
+        <div class="line-mobile-link long-mobile-link"></div>
+
+        <div id="mobile-link-options">
+          <div>AT-AT</div>
+
+          <div id="mobile-bulbs" data-controller="bulb-switch">
+            <%= image_tag 'lightbulb-dm.svg',
+              alt: t(".lightbulb_dm_alt"),
+              class: "mode-switch",
+              width: 150, height: 150,
+              data: { action: "click->bulb-switch#light", bulb_switch_target: "dark" } %>
+
+            <%= image_tag 'lightbulb-lm.svg',
+              alt: t(".lightbulb_lm_alt"),
+              class: "mode-switch mode-switch-hidden",
+              width: 150, height: 150,
+              data: { action: "click->bulb-switch#dark", bulb_switch_target: "light" } %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
