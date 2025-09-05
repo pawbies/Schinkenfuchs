@@ -149,7 +149,7 @@ nav {
   gap: 6px;
   width: 30px;
   height: 30px;
-
+  cursor: pointer;
 }
 
 .burger-line {
@@ -232,4 +232,28 @@ nav {
 
 .darkened {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+#mobile-language-container {
+  border-radius: 5px;
+  background-color: var(--text-dm);
+  height: 55%;
+  width: 65px;
+}
+
+#mobile-lang-select {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-lm);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+#mobile-lang-select option {
+  background: var(--text-dm);
+  color: var(--text-lm);
+  font-family: inherit;
+  font-weight: normal !important;
 }

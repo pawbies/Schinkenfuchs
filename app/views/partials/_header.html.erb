@@ -58,7 +58,13 @@
         <div class="line-mobile-link long-mobile-link"></div>
 
         <div id="mobile-link-options">
-          <div>AT-AT</div>
+          <div id="mobile-language-container">
+            <select name="lang-select" id="mobile-lang-select">
+              <option value="AT">AT 🇦🇹 <%# &#x1f1e6;&#x1f1f9; %></option>
+              <option value="DE">DE 🇩🇪</option>
+              <option value="EN">EN 🇬🇧</option>
+            </select>
+          </div>
 
           <div id="mobile-bulbs" data-controller="bulb-switch">
             <%= image_tag 'lightbulb-dm.svg',
