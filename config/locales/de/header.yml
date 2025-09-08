@@ -1,6 +1,8 @@
 de:
   partials:
     header:
+      logo_alt: "Logo"
+
       others: "Andere"
       chill: "gemütliche"
       links: "Links"

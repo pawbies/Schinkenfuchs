@@ -1,6 +1,8 @@
 at:
   partials:
     header:
+      logo_alt: "Logo"
+
       others: "Ondera"
       chill: "gmiadliche"
       links: "Links"
