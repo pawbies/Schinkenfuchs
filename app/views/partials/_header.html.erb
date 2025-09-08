@@ -59,10 +59,10 @@
 
         <div id="mobile-link-options">
           <div id="mobile-language-container">
-            <select name="lang-select" id="mobile-lang-select">
-              <option value="AT">AT 🇦🇹 <%# &#x1f1e6;&#x1f1f9; %></option>
-              <option value="DE">DE 🇩🇪</option>
-              <option value="EN">EN 🇬🇧</option>
+            <select id="mobile-lang-select" data-controller="language-selection" data-action="change->language-selection#update">
+              <option value="<%= url_for(locale: :at) %>" <%= 'selected' if I18n.locale == :at %>>AT 🇦🇹</option>
+              <option value="<%= url_for(locale: :de) %>" <%= 'selected' if I18n.locale == :de %>>DE 🇩🇪</option>
+              <option value="<%= url_for(locale: :en) %>" <%= 'selected' if I18n.locale == :en %>>EN 🇬🇧</option>
             </select>
           </div>
 
