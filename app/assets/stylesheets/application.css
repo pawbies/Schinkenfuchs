@@ -10,10 +10,19 @@
  */
 
 :root {
-  --text-dm: #dfdfdf;
-  --text-lm: #181818;
   --blue: #4287f5;
 }
+
+[data-theme="dark"] {
+  --text-color: #dfdfdf;
+  --background-color: #181818;
+}
+
+[data-theme="light"] {
+  --text-color: #181818;
+  --background-color: #dfdfdf;
+}
+
 
 body {
   margin: 0;
@@ -23,9 +32,10 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  color: var(--text-dm);
+  color: var(--text-color);
 
-  background-color: #181818;
+  background-color: var(--background-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .sr-only {

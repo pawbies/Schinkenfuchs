@@ -53,7 +53,7 @@ nav {
 
   border-radius: 5px;
 
-  background-color: var(--text-dm);
+  background-color: var(--background-color);
 }
 
 #right-cont {
@@ -158,7 +158,7 @@ nav {
 
   border-radius: 1px;
 
-  background-color: var(--text-dm);
+  background-color: var(--text-color);
 
   transition: width 0.2s ease;
 }
@@ -198,7 +198,7 @@ nav {
 
   border-radius: 0 0 15px 15px;
 
-  background-color: var(--text-lm);
+  background-color: var(--background-color);
 }
 
 #spacing-mobilelink {
@@ -211,7 +211,7 @@ nav {
 
   box-shadow: 0 4px 10px 0px var(--blue);
 
-  background-color: var(--text-dm);
+  background-color: var(--text-color);
 }
 
 .long-mobile-link {
@@ -252,7 +252,7 @@ nav {
   align-items: center;
 
   border-radius: 5px;
-  background-color: var(--text-dm);
+  background-color: var(--text-color);
   height: 65%;
   width: 65px;
 }
@@ -261,15 +261,15 @@ nav {
   background: transparent;
   border: none;
   outline: none;
-  color: var(--text-lm);
+  color: var(--background-color);
   cursor: pointer;
   font-size: 15px;
   font-weight: 200;
 }
 
 #mobile-lang-select option {
-  background: var(--text-dm);
-  color: var(--text-lm);
+  background: var(--text-color);
+  color: var(--background-color);
   font-family: inherit;
   font-weight: normal !important;
 }
