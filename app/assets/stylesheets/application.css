@@ -57,6 +57,7 @@ body {
 
 .triangle {
   position: absolute;
+  filter: drop-shadow(0 8px 16px rgba(66, 135, 245, 0.35));
   animation: floatingtriangle 4s ease-in-out 1s infinite;
 }
 
