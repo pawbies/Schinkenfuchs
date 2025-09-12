@@ -5,11 +5,11 @@
     <span id="nav-name">Schinkenfuchs</span>
   </div>
   <div id="nav-links">
-    <span class="nav-link"><%= t(".others") %></span>
+    <%= link_to t(".others"), root_path, class: "nav-link" %>
     <div class="nav-dot"></div>
-    <span class="nav-link"><%= t(".chill") %></span>
+    <%= link_to t(".chill"), root_path, class: "nav-link" %>
     <div class="nav-dot"></div>
-    <span class="nav-link"><%= t(".links") %></span>
+    <%= link_to t(".links"), root_path, class: "nav-link" %>
   </div>
   <div id="right-cont" data-controller="bulb-switch">
     <%= image_tag 'lightbulb-dm.svg',

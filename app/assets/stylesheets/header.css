@@ -43,6 +43,9 @@ nav {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 .nav-link::after {
