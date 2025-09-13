@@ -9,7 +9,7 @@
   justify-content: space-evenly;
   align-items: center;
   width: auto;
-  height: 550px;
+  height: 600px;
 }
 
 #hmp-heading {
@@ -37,4 +37,59 @@
   height: 350px;
 
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+#hmp-spacer {
+  height: 160px;
+}
+
+#hmp-services {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#hmp-plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+  flex: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  #hmp-plans {
+    gap: 50px;
+  }
+}
+
+.hmp-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+  width: 300px;
+  height: auto;
+
+  border: 2px solid var(--blue);
+  border-radius: 20px;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.plan-title {
+  font-size: 54px;
+  padding: 20px 0 0 0;
+  font-weight: 100;
+}
+
+.plan-line-title {
+  width: 75%;
+  height: 1px;
+  
+  margin: 0 0 10px 0;
+
+
+  background-color: var(--text-color);
 }
