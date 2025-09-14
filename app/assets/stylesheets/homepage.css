@@ -43,53 +43,79 @@
   height: 160px;
 }
 
-#hmp-services {
+.pricing {
   display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-#hmp-plans {
-  display: flex;
-  flex-direction: row;
+  gap: 2rem;
   justify-content: center;
-  gap: 150px;
-  flex: 1;
+  padding: 3rem 1rem;
 }
 
-@media screen and (max-width: 1300px) {
-  #hmp-plans {
-    gap: 50px;
-  }
+.hmp-card {
+  background: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--blue);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.hmp-plan {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  
-  width: 300px;
-  height: auto;
-
-  border: 2px solid var(--blue);
-  border-radius: 20px;
-
-  background-color: rgba(0, 0, 0, 0.2);
+.hmp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
 }
 
-.plan-title {
-  font-size: 54px;
-  padding: 20px 0 0 0;
-  font-weight: 100;
+.hmp-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-.plan-line-title {
-  width: 75%;
-  height: 1px;
-  
-  margin: 0 0 10px 0;
+.hmp-subtitle {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
 
+.hmp-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
 
-  background-color: var(--text-color);
+.hmp-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.hmp-card ul li {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.hmp-card button {
+  background: var(--blue);
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.hmp-card button:hover {
+  background: #2563eb;
+}
+
+.hmp-featured {
+  border: 2px solid #3b82f6;
+  transform: scale(1.05);
+}
+
+.hmp-featured:hover {
+  transform: scale(1.075);
 }
