@@ -109,7 +109,12 @@ nav {
   border-radius: 5px;
   background-color: var(--blue);
 
-  box-shadow: -2px -2px 10px -2px var(--blue), 2px 2px 10px -2px var(--blue);
+  filter: drop-shadow(0 0 10px rgba(66, 135, 245, 0.5));
+  transition: transform 0.2s ease;
+}
+
+#get-website:hover {
+  transform: scale(1.02);
 }
 
 #mobile-nav {

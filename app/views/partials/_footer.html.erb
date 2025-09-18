@@ -13,5 +13,32 @@
       </div>
       <span>bleibts gmiadle</span>
     </div>
+    <div>
+      <%# why t(...) no work, aswell as hover? %>
+      <%= link_to "request ->", root_path, id: "get-website-footer" %>
+    </div>
+
+    <div id="footer-link-cont">
+      <div class="footer-link-wrap">
+        <span>Follow Us</span>
+        <div></div>
+        <%= link_to "here", root_path, class: "footer-link" %>
+        <%= link_to "there", root_path, class: "footer-link" %>
+        <%= link_to "everywhere", root_path, class: "footer-link" %>
+      </div>
+      <div class="footer-link-wrap">
+        <span>About Us</span>
+        <div></div>
+        <%= link_to "wait", root_path, class: "footer-link" %>
+        <%= link_to "we're", root_path, class: "footer-link" %>
+        <%= link_to "goated", root_path, class: "footer-link" %>
+      </div>
+      <div class="footer-link-wrap">
+        <span>Legal Info</span>
+        <div></div>
+        <%= link_to "this", root_path, class: "footer-link" %>
+        <%= link_to "that", root_path, class: "footer-link" %>
+      </div>
+    </div>
   </div>
 </footer>

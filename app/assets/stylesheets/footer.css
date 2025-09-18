@@ -1,7 +1,7 @@
 footer {
   display: flex;
   justify-content: space-around;
-  height: 200px;
+  height: 300px;
   margin-top: 20px;
   padding: 50px;
 
@@ -18,7 +18,8 @@ footer {
 
 #footer-cont {
   display: flex;
-
+  flex-direction: column;
+  gap: 50px;
   width: 700px;
 }
 
@@ -32,6 +33,71 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+#get-website-footer {
+  text-decoration: none;
+  color: inherit;
+
+  padding: 15px;
+
+  border-radius: 5px;
+  background-color: var(--blue);
+
+  filter: drop-shadow(0 0 10px rgba(66, 135, 245, 0.5));
+  transition: transform 0.2s ease;
+}
+
+#get-website-footer:hover {
+  transform: scale(1.02);
+}
+
+#footer-link-cont {
+  display: flex;
+  gap: 20%;
+}
+
+.footer-link-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  width: min-content;
+
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footer-link::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+
+  content: "";
+
+  border-radius: 1px;
+  
+  width: 90%;
+  height: 2px;
+
+  background-color: var(--blue);
+
+  transition: transform 0.2s ease;
+  
+  pointer-events: none;
+}
+
+.footer-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 #footer-t1 {top: 10%; left: 90%; animation-name: floatingtrianglemin; animation-duration: 5s;}
