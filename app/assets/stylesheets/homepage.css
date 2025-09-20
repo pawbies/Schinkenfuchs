@@ -119,3 +119,48 @@
 .hmp-featured:hover {
   transform: scale(1.075);
 }
+
+#hmp-about {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.hmp-about-cont {
+  display: flex;
+
+  gap: 1em;
+  
+  padding: 2rem;
+  width: 260px;
+}
+
+.hmp-about-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.hmp-about-text {
+  height: auto;
+  font-size: 28px;
+}
+
+.hmp-about-subtext {
+  height: auto;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+#hmp-contact {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+#hmp-contact-text {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
