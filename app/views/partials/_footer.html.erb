@@ -46,7 +46,9 @@
       <div id="footer-scndlink-cont">
         <span id="footer-copyright">© Schinkenfuchs <%= Date.current.year %></span>
         <div>
-          <%= image_tag 'github-dm.svg', class: "footer-icon" %>
+          <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
+            <%= image_tag 'github-dm.svg', class: "footer-icon" %>
+          <% end %>
         </div>
       </div>
     </div>
