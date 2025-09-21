@@ -230,3 +230,43 @@
   }
 
 }
+
+#triangle-cont {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#t1 { top: 10%; left: 5%; animation-duration: 5s; }
+#t2 { top: 40%; left: 3%; animation-name: floatingtrianglemin; animation-duration: 4.3s; }
+#t3 { top: 1%; left: 20%; animation-duration: 4s; }
+#t4 { top: 5%; left: 40%; animation-name: floatingtrianglemin; animation-duration: 5s; }
+#t5 { top: 50%; left: 40%; animation-duration: 4.8s; }
+#t6 { top: 60%; left: 80%;  animation-name: floatingtrianglemin;animation-duration: 5.8s; }
+#t7 { top: 60%; left: 10%; animation-duration: 6.4s; }
+#t8 { top: 55%; left: 30%; animation-name: floatingtrianglemin; animation-duration: 5.4s; }
+#t9 { top: 10%; left: 50%; animation-duration: 5s; }
+#t10 { top: 60%; left: 50%; animation-name: floatingtrianglemin; animation-duration: 4.8s; }
+#t11 { top: 15%; left: 86%; animation-duration: 5.6s; }
+#t12 { top: 55%; left: 90%; animation-name: floatingtrianglemin; animation-duration: 5.2s; }
+
+@media (max-width: 1024px) {
+  #t1 { top: 5%; left: 5%; animation-duration: 5s; }
+  #t2 { display: none; }
+  #t3 { display: none; }
+  #t4 { top: 30%; left: 8%; animation-name: floatingtrianglemin; animation-duration: 5s; }
+  #t5 { top: 60%; left: 12%; animation-duration: 4.8s; }
+  #t6 { display: none; }
+  #t7 { top: 0%; left: 60%; animation-duration: 6.4s; }
+  #t8 { display: none; }
+  #t9 { top: 30%; left: 80%; animation-duration: 5s; }
+  #t10 { display: none; }
+  #t11 { display: none; }
+  #t12 { top: 60%; left: 80%; animation-name: floatingtrianglemin; animation-duration: 5.2s; }
+
+  #triangle-cont img {
+    opacity: 0.8;
+  }
+}
