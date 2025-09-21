@@ -164,3 +164,69 @@
   align-items: center;
   font-size: 32px;
 }
+
+@media (max-width: 1024px) {
+  #hmp-firstrow {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  #hmp-heading {
+    width: 100%;
+    height: auto;
+  }
+
+  .hmp-heading-wd {
+    font-size: 48px;
+  }
+
+  #hmp-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  #hmp-spacer {
+    height: 40px;
+  }
+
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem 1rem;
+  }
+
+  .hmp-card {
+    width: 50%;
+    max-width: 400px;
+  }
+
+  #hmp-about {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .hmp-about-cont {
+    width: 90%;
+    max-width: 400px;
+    justify-content: center;
+  }
+
+  #hmp-contact {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  #hmp-contact-text {
+    font-size: 24px;
+    justify-content: center;
+  }
+
+  #get-website {
+    align-self: center;
+  }
+
+}
