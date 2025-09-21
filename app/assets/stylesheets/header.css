@@ -203,6 +203,7 @@ nav {
 .mobile-hidden {
   transform: translateY(-40px) !important;
   opacity: 0 !important;
+  pointer-events: none;
 }
 
 #mobile-links {
@@ -272,6 +273,7 @@ nav {
   width: 100vw;
   height: 100vh;
   /* z-index: -1; */
+  pointer-events: none;
   transition: all 0.4s ease;
 }
 
