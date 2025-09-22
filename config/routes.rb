@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  scope module: "pages" do
+    get "legal/tos", as: :tos
+    get "legal/privacy", as: :privacy
+    get "legal/imprint", as: :imprint
+  end
+
   resource :session
   resources :passwords, param: :token
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
