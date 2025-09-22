@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale %>">
   <head>
+
+    <script nonce="<%= content_security_policy_nonce %>">
+      const theme = localStorage.getItem("theme") || "dark";
+      document.documentElement.setAttribute("data-theme", theme);
+    </script>
+
     <title><%= content_for(:title) || "Schinkenfuchs" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">

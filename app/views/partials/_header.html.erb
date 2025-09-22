@@ -1,9 +1,9 @@
 <%# Header #%>
 <nav>
-  <div id="logo-cont">
+  <%= link_to root_path, id: "logo-cont" do %>
     <%= image_tag 'shork.png', id: "nav-logo", alt: t(".logo_alt") %>
     <span id="nav-name">Schinkenfuchs</span>
-  </div>
+  <% end %>
   <div id="nav-links">
     <%= link_to t(".others"), root_path, class: "nav-link" %>
     <div class="nav-dot"></div>
@@ -32,10 +32,12 @@
 <div id="mobile-nav" data-controller="mobile-nav">
   <div id="plaque" data-mobile-nav-target="plaque"></div>
   <div id="mobile-top">
-    <div id="mobile-logo-cont">
+
+    <%= link_to root_path, id: "mobile-logo-cont" do %>
       <%= image_tag 'shork.png', id: "mobile-logo", alt: t(".logo_alt") %>
       <span id="mobile-nav-name">Schinkenfuchs</span>
-    </div>
+    <% end %>
+
 
     <div id="mobile-burger-cont">
       <div id="burger" data-action="click->mobile-nav#toggle">

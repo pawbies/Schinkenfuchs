@@ -22,6 +22,8 @@ nav {
   justify-content: center;
   align-items: center;
 
+  text-decoration: none;
+
   gap: 10px;
 }
 
@@ -31,6 +33,7 @@ nav {
 
 #nav-name {
   font-size: 24px;
+  color: var(--text-color);
 }
 
 #nav-links {
@@ -152,17 +155,19 @@ nav {
 
   width: 25%;
   height: auto;
-  
+  text-decoration: none;
   z-index: 5;
 }
 
 #mobile-logo {
   width: 35px;
-
+  
 }
 
 #mobile-nav-name {
   font-size: 16px;
+  color: var(--text-color);
+
 }
 
 #mobile-burger-cont {
