@@ -39,3 +39,21 @@
   opacity: 0.7;
   text-wrap: balance;
 }
+
+#triangle-legal-cont {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+
+  margin-top: -120px;
+
+  z-index: -1;
+}
+
+#legal-t1 {top: 5%; left: 15%; animation-name: floatingtrianglemin; animation-duration: 5s;}
+#legal-t2 {top: 50%; left: 70%; animation-duration: 5.4s;}
+#legal-t3 {top: 20%; left: 60%; animation-name: floatingtrianglemin; animation-duration: 4.2s;}
+#legal-t4 {top: 70%; left: 12%; animation-duration: 4.6s;}
+#legal-t5 {top: 1%; left: 70%; animation-name: floatingtrianglemin; animation-duration: 5.1s;}
+#legal-t6 {top: 0%; left: 45%; animation-duration: 6s;}
