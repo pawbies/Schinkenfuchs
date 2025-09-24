@@ -69,31 +69,31 @@
     <div class="hmp-about-cont">
       <%= image_tag 'lightbulb-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
-        <span class="hmp-about-text">Portfolio</span>
-        <span class="hmp-about-subtext">Recent work</span>
+        <span class="hmp-about-text"><%= t(".about.portfolio") %></span>
+        <span class="hmp-about-subtext"><%= t(".about.recent_work") %></span>
       </div>
     </div>
 
     <div class="hmp-about-cont">
       <%= image_tag 'lightbulb-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
-        <span class="hmp-about-text">Testimonials</span>
-        <span class="hmp-about-subtext">What our Clients say</span>
+        <span class="hmp-about-text"><%= t(".about.testimonials") %></span>
+        <span class="hmp-about-subtext"><%= t(".about.what_our_clients_say") %></span>
       </div>
     </div>
 
     <div class="hmp-about-cont">
       <%= image_tag 'lightbulb-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
-        <span class="hmp-about-text">Process</span>
-        <span class="hmp-about-subtext">How it works</span>
+        <span class="hmp-about-text"><%= t(".about.process") %></span>
+        <span class="hmp-about-subtext"><%= t(".about.how_it_works") %></span>
       </div>
     </div>
   </section>
 
   <section id="hmp-contact">
-    <span id="hmp-contact-text">Questions? Let's get in touch!</span>
-    <%= link_to "-> Contact Us <-", root_path, id: "get-website" %>
+    <span id="hmp-contact-text"> <%= t(".questions") %></span>
+    <%= link_to t(".request_question"), root_path, id: "get-website" %>
   </section>
 
 </div>

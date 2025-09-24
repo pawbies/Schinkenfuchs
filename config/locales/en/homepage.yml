@@ -1,10 +1,24 @@
 en:
   pages:
     homepage:
-      language: "Language: %{code}"
-
       slogan:
         chill: "Chill"
         websites: "Websites"
         for: "for"
         you: "you"
+      
+      cards:
+        
+      about:
+        portfolio: "Portfolio"
+        recent_work: "Recent work"
+
+        testimonials: "Testimonials"
+        what_out_clients_say: "What our Clients say"
+
+        process: "Process"
+        how_it_works: "How it works"
+
+
+      questions: "Questions? Let's get in touch!"
+      request_question: "-> Contact Us <-"
