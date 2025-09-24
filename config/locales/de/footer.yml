@@ -1,0 +1,19 @@
+de:
+  partials:
+    footer:
+      request_website: "Anfragen ->"
+      
+      company: "Unternehmen"
+      about_us: "Über uns"
+      our_work: "Unsere Arbeit"
+      testimonials: "Referenzen"
+      
+      services: "Dienstleistungen"
+      static: "Statisch"
+      dynamic: "Dynamisch"
+      scalable: "Skalierbar"
+      
+      legal_info: "Rechtliches"
+      terms_of_service: "Nutzungsbedingungen"
+      privacy_policy: "Datenschutzerklärung"
+      imprint: "Impressum"

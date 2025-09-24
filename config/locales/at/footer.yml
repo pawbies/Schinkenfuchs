@@ -1,0 +1,19 @@
+at:
+  partials:
+    footer:
+      request_website: "Onfrogn ->"
+      
+      company: "Untanehmen"
+      about_us: "Üba uns"
+      our_work: "Unsa Oawad"
+      testimonials: "Refarenzn"
+      
+      services: "Dienstleistunga"
+      static: "Statisch"
+      dynamic: "Dynamisch"
+      scalable: "Skalierboa"
+      
+      legal_info: "Rechtlichs"
+      terms_of_service: "Nutzungsbedingunga"
+      privacy_policy: "Datnschutzerklärung"
+      imprint: "Impressum"
