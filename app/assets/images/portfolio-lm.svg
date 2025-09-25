@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 24 24"
+     fill="none"
+     stroke="#181818"
+     stroke-width="1.5"
+     class="w-6 h-6">
+  <rect x="3" y="4" width="7" height="7" rx="1.5"/>
+  <rect x="14" y="4" width="7" height="7" rx="1.5"/>
+  <rect x="3" y="13" width="7" height="7" rx="1.5"/>
+  <rect x="14" y="13" width="7" height="7" rx="1.5"/>
+</svg>
