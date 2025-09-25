@@ -11,7 +11,28 @@
     <div class="nav-dot"></div>
     <%= link_to t(".links"), root_path, class: "nav-link" %>
   </div>
+  
   <div id="right-cont" data-controller="bulb-switch">
+    <div id="custom-lang-select-container" data-controller="language-selection">
+      <label class="sr-only" for="custom-lang-select"><%= t(".locale_label") %></label>
+      <div id="custom-lang-select" tabindex="0" data-action="click->language-selection#toggle">
+        <span id="custom-lang-selected">
+          <% if I18n.locale == :at %>AT 🇦🇹<% elsif I18n.locale == :de %>DE 🇩🇪<% else %>EN 🇬🇧<% end %>
+        </span>
+        <span class="custom-lang-arrow">&#9662;</span>
+        <ul id="custom-lang-options" data-language-selection-target="options" class="hidden">
+          <li data-value="<%= url_for(locale: :at) %>" data-action="click->language-selection#select">AT 🇦🇹</li>
+          <li data-value="<%= url_for(locale: :de) %>" data-action="click->language-selection#select">DE 🇩🇪</li>
+          <li data-value="<%= url_for(locale: :en) %>" data-action="click->language-selection#select">EN 🇬🇧</li>
+        </ul>
+      </div>
+  
+      <select name="locale" id="mobile-lang-select" class="sr-only" data-action="change->language-selection#update">
+        <option value="<%= url_for(locale: :at) %>" <%= 'selected' if I18n.locale == :at %>>AT 🇦🇹</option>
+        <option value="<%= url_for(locale: :de) %>" <%= 'selected' if I18n.locale == :de %>>DE 🇩🇪</option>
+        <option value="<%= url_for(locale: :en) %>" <%= 'selected' if I18n.locale == :en %>>EN 🇬🇧</option>
+      </select>
+    </div>
     <%= image_tag 'lightbulb-dm.svg',
       alt: t(".lightbulb_dm_alt"),
       class: "mode-switch",
@@ -60,9 +81,21 @@
         <div class="line-mobile-link long-mobile-link"></div>
 
         <div id="mobile-link-options">
-          <div id="mobile-language-container">
-            <label class="sr-only" for="locale"><%= t(".locale_label") %></label>
-            <select name="locale" id="mobile-lang-select" data-controller="language-selection" data-action="change->language-selection#update">
+          <div id="custom-lang-select-container" data-controller="language-selection">
+            <label class="sr-only" for="custom-lang-select"><%= t(".locale_label") %></label>
+            <div id="custom-lang-select" tabindex="0" data-action="click->language-selection#toggle">
+              <span id="custom-lang-selected">
+                <% if I18n.locale == :at %>AT 🇦🇹<% elsif I18n.locale == :de %>DE 🇩🇪<% else %>EN 🇬🇧<% end %>
+              </span>
+              <span class="custom-lang-arrow">&#9662;</span>
+              <ul id="custom-lang-options" data-language-selection-target="options" class="hidden">
+                <li data-value="<%= url_for(locale: :at) %>" data-action="click->language-selection#select">AT 🇦🇹</li>
+                <li data-value="<%= url_for(locale: :de) %>" data-action="click->language-selection#select">DE 🇩🇪</li>
+                <li data-value="<%= url_for(locale: :en) %>" data-action="click->language-selection#select">EN 🇬🇧</li>
+              </ul>
+            </div>
+        
+            <select name="locale" id="mobile-lang-select" class="sr-only" data-action="change->language-selection#update">
               <option value="<%= url_for(locale: :at) %>" <%= 'selected' if I18n.locale == :at %>>AT 🇦🇹</option>
               <option value="<%= url_for(locale: :de) %>" <%= 'selected' if I18n.locale == :de %>>DE 🇩🇪</option>
               <option value="<%= url_for(locale: :en) %>" <%= 'selected' if I18n.locale == :en %>>EN 🇬🇧</option>

@@ -1,12 +1,30 @@
 import { Controller } from "@hotwired/stimulus"
 
-// Connects to data-controller="language-selection"
 export default class extends Controller {
+  static targets = ["options"]
+
   connect() {
+    document.addEventListener("click", this.closeOnClickAway)
   }
-  
-  update(evt) {
-    const url = evt.target.value;
+
+  disconnect() {
+    document.removeEventListener("click", this.closeOnClickAway)
+  }
+
+  toggle(event) {
+    event.stopPropagation();
+    this.optionsTarget.classList.toggle("hidden");
+  }
+
+  select(event) {
+    const url = event.target.dataset.value;
+    this.optionsTarget.classList.add("hidden");
     if (window.Turbo) { Turbo.visit(url) } else { window.location = url }
+  }
+
+  closeOnClickAway = (event) => {
+    if (!this.element.contains(event.target)) {
+      this.optionsTarget.classList.add("hidden");
+    }
   }
 }

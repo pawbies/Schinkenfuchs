@@ -314,3 +314,69 @@ nav {
   font-family: inherit;
   font-weight: normal !important;
 }
+
+#custom-lang-select-container {
+  position: relative;
+  width: 75px;
+}
+
+#custom-lang-select {
+  background: transparent;
+  border: 1px solid var(--text-color);
+  border-radius: 6px;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 8px 16px 8px 12px;
+  font-size: 15px;
+  font-weight: 200;
+  position: relative;
+  user-select: none;
+}
+
+.custom-lang-arrow {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#custom-lang-options {
+  position: absolute;
+  left: 0;
+  top: 110%;
+  width: 100%;
+  background: var(--background-color);
+  border: 1px solid var(--text-color);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 10;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#custom-lang-options li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: var(--text-color);
+}
+
+#custom-lang-options li:hover {
+  background: var(--blue);
+  color: var(--background-color);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Hide native select visually but keep it accessible */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  border: 0;
+}
