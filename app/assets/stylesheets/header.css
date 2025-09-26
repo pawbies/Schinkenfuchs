@@ -365,7 +365,6 @@ nav {
   display: none;
 }
 
-/* Hide native select visually but keep it accessible */
 .sr-only {
   position: absolute !important;
   width: 1px; height: 1px;

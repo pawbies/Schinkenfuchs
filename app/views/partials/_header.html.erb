@@ -27,7 +27,7 @@
         </ul>
       </div>
   
-      <select name="locale" class="sr-lang-select" class="sr-only" data-action="change->language-selection#update">
+      <select name="locale" class="sr-lang-select sr-only" data-action="change->language-selection#update">
         <option value="<%= url_for(locale: :at) %>" <%= 'selected' if I18n.locale == :at %>>AT 🇦🇹</option>
         <option value="<%= url_for(locale: :de) %>" <%= 'selected' if I18n.locale == :de %>>DE 🇩🇪</option>
         <option value="<%= url_for(locale: :en) %>" <%= 'selected' if I18n.locale == :en %>>EN 🇬🇧</option>
@@ -95,7 +95,7 @@
               </ul>
             </div>
         
-            <select name="locale" class="sr-lang-select" class="sr-only">
+            <select name="locale" class="sr-lang-select sr-only" data-action="change->language-selection#update">
               <option value="<%= url_for(locale: :at) %>" <%= 'selected' if I18n.locale == :at %>>AT 🇦🇹</option>
               <option value="<%= url_for(locale: :de) %>" <%= 'selected' if I18n.locale == :de %>>DE 🇩🇪</option>
               <option value="<%= url_for(locale: :en) %>" <%= 'selected' if I18n.locale == :en %>>EN 🇬🇧</option>
