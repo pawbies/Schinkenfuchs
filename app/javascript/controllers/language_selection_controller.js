@@ -1,16 +1,16 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["options"]
+  static targets = ["options"];
 
   /* Close when clicking anywhere else */
   /* (Ignore this, Mr. 19 years old)*/
   connect() {
-    document.addEventListener("click", this.closeOnClickAway)
+    document.addEventListener("click", this.closeOnClickAway);
   }
 
   disconnect() {
-    document.removeEventListener("click", this.closeOnClickAway)
+    document.removeEventListener("click", this.closeOnClickAway);
   }
 
   closeOnClickAway = (event) => {
@@ -21,11 +21,11 @@ export default class extends Controller {
 
   /* needed fo Pagespeed insight, trust */
   update(event) {
-    const url = event.target.value
+    const url = event.target.value;
     if (window.Turbo) {
-      Turbo.visit(url)
+      Turbo.visit(url);
     } else {
-      window.location = url
+      window.location = url;
     }
   }
 
@@ -37,6 +37,6 @@ export default class extends Controller {
   select(event) {
     const url = event.target.dataset.value;
     this.optionsTarget.classList.add("hidden");
-    if (window.Turbo) { Turbo.visit(url) } else { window.location = url }
+    if (window.Turbo) { Turbo.visit(url); } else { window.location = url; }
   }
 }

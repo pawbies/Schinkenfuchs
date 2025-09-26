@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["light", "dark"]
+  static targets = ["light", "dark"];
 
   connect() {
     if ((localStorage.getItem("theme") || "dark") == "light") this.light();
