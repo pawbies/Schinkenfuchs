@@ -3,6 +3,40 @@ at:
     legal:
       imprint:
         title: "Impressum"
+        last_updated: "Zletzt aktualisirt: %{date}"
+        operator:
+          website_operator: "Onbieta / Betreiba"
+          country: "Österreich"
+        contact:
+          contact: "Kontakt"
+          phone: "Telefon: %{number}"
+          email: "Email: %{email}"
+          website: "Websitn"
+          website_html: "Websitn: %{website}"
+        ar:
+          authorized_representative: "Vertretungsberechtigte oda Vertretungsberechtigta"
+          ceo: "CEO: %{name}"
+        cr:
+          company_register: "Firmenbuch / Regista"
+          commercial_register_number: "Firmenbuchnumma: %{crn}"
+          commercial_court: "Firmenbuchgricht: %{court}"
+        vat:
+          vat_identification_number: "Umsatzsteia"
+          vat_id: "UID-Numma: %{uid}"
+        rfc:
+          responsible_for_content: "Inhoiltlich verontwortlich gmäß Mediengsetz"
+        lfc:
+          liable_for_content: "Hoftungshinweis"
+          text: "Trotz sorgfoiltiger inhoiltlicha Kontroin iwanemen wir koa Hoftung fia externe Links.
+                Fia den Inhoit verlinkta Seitn san ausschließlich deren Betreiba verontwortle."
+        copyright:
+          copyright: "Urhebarecht / Büdquön"
+          disclaimer: "Oile Inhoite (Texte, Büde, Grafikn) fa der Webseit san urheberrechtlich gschützt, sofern ned onders ongebn."
+          sources: "Quönongobn:"
+        privacy:
+          privacy_policy: "Datnschutz"
+          text_html: "Unsa Datnschutzerklerung findst du do: %{link}"
+
       privacy:
         title: "Datnschutz"
       tos:

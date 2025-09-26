@@ -3,6 +3,40 @@ de:
     legal:
       imprint:
         title: "Impressum"
+        last_updated: "Zuletzt aktualisiert: %{date}"
+        operator:
+          website_operator: "Anbieter / Betreiber"
+          country: "Österreich"
+        contact:
+          contact: "Kontakt"
+          phone: "Telefon: %{number}"
+          email: "E-Mail: %{email}"
+          website: "Website"
+          website_html: "Website: %{website}"
+        ar:
+          authorized_representative: "Vertretungsberechtigte(r)"
+          ceo: "CEO: %{name}"
+        cr:
+          company_register: "Firmenbuch / Register"
+          commercial_register_number: "Firmenbuchnummer: %{crn}"
+          commercial_court: "Firmenbuchgericht: %{court}"
+        vat:
+          vat_identification_number: "Umsatzsteuer"
+          vat_id: "UID-Nummer: %{uid}"
+        rfc:
+          responsible_for_content: "Inhaltlich verantwortlich gemäß Mediengesetz"
+        lfc:
+          liable_for_content: "Haftungshinweis"
+          text: "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für externe Links.
+                Für den Inhalt verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich."
+        copyright:
+          copyright: "Urheberrecht / Bildquellen"
+          disclaimer: "Alle Inhalte (Texte, Bilder, Grafiken) dieser Website sind urheberrechtlich geschützt, sofern nicht anders angegeben."
+          sources: "Quellenangaben:"
+        privacy:
+          privacy_policy: "Datenschutz"
+          text_html: "Unsere Datenschutzerklärung findest du hier: %{link}"
+
       privacy:
         title: "Datenschutz"
       tos:

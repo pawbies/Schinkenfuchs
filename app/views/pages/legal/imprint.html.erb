@@ -10,32 +10,78 @@
     <%= image_tag 'triangles/3-horiz.png', id: "legal-t6", class: "triangle" %>
   </div>
   <div class="legal-wrap">
-    <h1 class="legal-pageheading">Imprint</h1>
-    <span class="legal-updated">Last updated: 23-09-2025</span>
+    <h1 class="legal-pageheading"><%= t(".title") %></h1>
+    <span class="legal-updated"><%= t(".last_updated", date: "26-09-2025") %></span>
 
     <div class="legal-section">
-      <h1 class="legal-heading">Who are we</h1>
-      <span class="legal-text">Heres who we are</span>
+      <h1 class="legal-heading"><%= t(".operator.website_operator") %></h1>
+      <span class="legal-text">
+        [First name Last name or Company name]<br>
+        [Legal form, e.g., GmbH / Sole proprietorship]<br>
+        [Street + Number]<br>
+        [Postal code City]<br>
+        <%= t(".operator.country") %>
+      </span>
     </div>
 
     <div class="legal-section">
-      <h1 class="legal-heading">We sell your info</h1>
-      <span class="legal-text">Efficiently</span>
+      <h1 class="legal-heading"><%= t(".contact.contact") %></h1>
+      <span class="legal-text">
+        <%= t(".contact.phone", number: "[phone number]") %><br>
+        <%= t(".contact.email", email: "[email address]") %><br>
+        <%= t(".contact.website_html", website: link_to(t(".website"), root_path)) %>
+      </span>
     </div>
 
     <div class="legal-section">
-      <h1 class="legal-heading">2. You give us moneyy</h1>
-      <span class="legal-text">Moneyyy</span>
-
-      <h2 class="legal-subheading">2.1 you pay us</h2>
-      <span class="legal-text">we build site</span>
+      <h1 class="legal-heading"><%= t(".ar.authorized_representative") %></h1>
+      <span class="legal-text">
+        <%= t(".ar.ceo", name: "Alexander Fuchs") %>
+      </span>
     </div>
 
     <div class="legal-section">
-      <h1 class="legal-heading">3. You give us moneyy</h1>
-      <span class="legal-text">Moneyyy</span>
-
+      <h1 class="legal-heading"><%= t(".cr.company_register") %></h1>
+      <span class="legal-text">
+        <%= t(".cr.commercial_register_number", crn: "[number]") %><br>
+        <%= t(".cr.commercial_court", court: "[court]") %>
+      </span>
     </div>
-  </div>
 
+    <div class="legal-section">
+      <h1 class="legal-heading"><%= t(".vat.vat_identification_number") %></h1>
+      <span class="legal-text">
+        <%= t(".vat.vat_id", uid: "[UID]") %>
+      </span>
+    </div>
+
+    <div class="legal-section">
+      <h1 class="legal-heading"><%= t(".rfc.responsible_for_content") %></h1>
+      <span class="legal-text">
+        Krümmelmonster, [Address]
+      </span>
+    </div>
+  
+    <div class="legal-section">
+      <h1 class="legal-heading"><%= t(".lfc.liable_for_content") %></h1>
+      <span class="legal-text">
+        <%= t(".lfc.text") %>
+      </span>
+    </div>
+
+    <div class="legal-section">
+      <h1 class="legal-heading"><%= t(".copyright.copyright") %></h1>
+      <span class="legal-text">
+        <%= t(".copyright.disclaimer") %><br>
+        <%= t(".copyright.sources") %><br>
+        [Sources]
+      </span>
+    </div>
+
+    <div class="legal-section">
+      <h1 class="legal-heading"><%= t(".privacy.privacy_policy") %></h1>
+      <span class="legal-text">
+        <%= t(".privacy.text_html", link: link_to(t(".privacy.privacy_policy"), privacy_path)) %>
+      </span>
+    </div>
 </div>

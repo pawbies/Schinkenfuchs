@@ -3,6 +3,40 @@ en:
     legal:
       imprint:
         title: "Imprint"
+        last_updated: "Last updated: %{date}"
+        operator:
+          website_operator: "Website operator"
+          country: "Austria"
+        contact:
+          contact: "Contact"
+          phone: "Phone: %{number}"
+          email: "Email: %{email}"
+          website: "Website"
+          website_html: "Website: %{website}"
+        ar:
+          authorized_representative: "Authorized Representative"
+          ceo: "CEO: %{name}"
+        cr:
+          company_register: "Company Register"
+          commercial_register_number: "Commercial Register Number: %{crn}"
+          commercial_court: "Commercial Court: %{court}"
+        vat:
+          vat_identification_number: "VAT Identification Number"
+          vat_id: "VAT ID (UID): %{uid}"
+        rfc:
+          responsible_for_content: "Responsible for Content (according to Austrian Media Act)"
+        lfc:
+          liable_for_content: "Liability for Content"
+          text: "Despite careful content control, we assume no liability for the content of external links.
+                The operators of linked pages are solely responsible for their content."
+        copyright:
+          copyright: "Copyright / Image Credits"
+          disclaimer: "All content (texts, images, graphics) on this website is subject to copyright unless otherwise stated."
+          sources: "Image / content sources:"
+        privacy:
+          privacy_policy: "Privacy Policy"
+          text_html: "You can find our Privacy Policy here: %{link}"
+
       privacy:
         title: "Privacy Policy"
       tos:
