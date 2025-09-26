@@ -19,10 +19,12 @@ nav {
 
 #logo-cont{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   text-decoration: none;
+
+  width: 350px;
 
   gap: 10px;
 }
@@ -89,8 +91,10 @@ nav {
 
 #right-cont {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 10px;
+  width: 350px;
 }
 
 .mode-switch {

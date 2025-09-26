@@ -139,6 +139,7 @@
 .hmp-about-text-wrap {
   display: flex;
   flex-direction: column;
+  gap: 0.33em;
 }
 
 .hmp-about-text {
