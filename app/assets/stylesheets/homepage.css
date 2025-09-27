@@ -271,3 +271,8 @@
     opacity: 0.8;
   }
 }
+
+@media (max-width: 600px) {
+  #t9 { display: none; }
+  #t12 { top: 50%; left: 75%; animation-name: floatingtrianglemin; animation-duration: 5.2s; }
+}
