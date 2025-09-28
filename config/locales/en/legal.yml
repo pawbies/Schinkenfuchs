@@ -113,3 +113,33 @@ en:
         gl:
           governing_law: "Governing Law"
           text: "Austrian law applies. Place of jurisdiction is Linz."
+
+      tac:
+        title: "General Terms and Conditions"
+        last_updated: "Last updated: %{date}"
+        parties:
+          title: "Contracting Parties"
+          text: "These General Terms and Conditions apply to contracts between “Schinkenfuchs” (hereinafter “Provider”) and its customers."
+        services:
+          title: "Services"
+          text: "The Provider creates individual websites according to the customer’s specifications. Additionally, hosting and maintenance services can be booked for a monthly fee."
+        prices:
+          title: "Prices and Payment"
+          text: "Website creation requires advance payment. Ongoing services (hosting, maintenance) are billed monthly. Payments are processed via the payment provider Stripe."
+        delivery:
+          title: "Delivery and Start of Services"
+          text: "The Provider will start implementing the agreed services upon receipt of the advance payment."
+        withdrawal:
+          title: "Right of Withdrawal for Consumers"
+          text: "Consumers generally have a 14-day right of withdrawal.
+                Since these are individually tailored digital services, execution will only begin once the customer expressly agrees and waives the right of withdrawal."
+        rights:
+          title: "Rights and Obligations"
+          text: "The Provider retains all copyrights to the created websites unless otherwise agreed.
+                The customer receives simple usage rights for the agreed purpose and undertakes not to publish illegal content."
+        liability:
+          title: "Liability"
+          text: "The Provider is liable only for intent and gross negligence. Liability for slight negligence is excluded to the extent permitted by law."
+        final:
+          title: "Final Provisions"
+          text: "Austrian law applies. Place of jurisdiction is Linz. Changes to these GTC will be communicated to the customer; they shall be deemed accepted if the customer does not object within 14 days."

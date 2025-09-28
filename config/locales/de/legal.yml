@@ -112,3 +112,33 @@ de:
         gl:
           governing_law: "Anwendbares Recht"
           text: "Es gilt österreichisches Recht. Gerichtsstand ist Linz."
+
+      tac:
+        title: "Allgemeine Geschäftsbedingungen"
+        last_updated: "Zuletzt aktualisiert: %{date}"
+        parties:
+          title: "Vertragspartner"
+          text: "Diese Allgemeinen Geschäftsbedingungen gelten für Verträge zwischen „Schinkenfuchs“ (nachfolgend „Anbieter“) und seinen Kunden."
+        services:
+          title: "Leistungen"
+          text: "Der Anbieter erstellt individuelle Webseiten nach den Wünschen des Kunden. Zusätzlich können Hosting- und Wartungsleistungen gegen monatliche Gebühr in Anspruch genommen werden."
+        prices:
+          title: "Preise und Zahlung"
+          text: "Die Erstellung der Webseite erfolgt gegen Vorauszahlung. Laufende Leistungen (Hosting, Wartung) werden monatlich abgerechnet. Zahlungen erfolgen über den Zahlungsdienstleister Stripe."
+        delivery:
+          title: "Lieferung und Leistungsbeginn"
+          text: "Mit Eingang der Vorauszahlung beginnt der Anbieter mit der Umsetzung der vereinbarten Leistungen."
+        withdrawal:
+          title: "Widerrufsrecht für Verbraucher"
+          text: "Verbrauchern steht grundsätzlich ein 14-tägiges Widerrufsrecht zu.
+                Da es sich um individuell angefertigte digitale Leistungen handelt, beginnt die Leistungsausführung jedoch nur, wenn der Kunde ausdrücklich zustimmt und auf sein Widerrufsrecht verzichtet."
+        rights:
+          title: "Rechte und Pflichten"
+          text: "Der Anbieter behält sämtliche Urheberrechte an erstellten Webseiten, soweit nichts anderes vereinbart wird.
+                Der Kunde erhält einfache Nutzungsrechte im Rahmen des vereinbarten Zwecks und verpflichtet sich, keine rechtswidrigen Inhalte zu veröffentlichen."
+        liability:
+          title: "Haftung"
+          text: "Der Anbieter haftet nur für Vorsatz und grobe Fahrlässigkeit. Eine Haftung für leichte Fahrlässigkeit ist ausgeschlossen, soweit gesetzlich zulässig."
+        final:
+          title: "Schlussbestimmungen"
+          text: "Es gilt österreichisches Recht. Gerichtsstand ist Linz. Änderungen der AGB werden dem Kunden mitgeteilt; sie gelten als anerkannt, wenn der Kunde nicht binnen 14 Tagen widerspricht."

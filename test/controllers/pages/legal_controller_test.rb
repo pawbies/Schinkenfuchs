@@ -6,6 +6,11 @@ class Pages::LegalControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get tac" do
+    get tac_url
+    assert_response :success
+  end
+
   test "should get privacy" do
     get privacy_url
     assert_response :success

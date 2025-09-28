@@ -113,3 +113,31 @@ at:
         gl:
           governing_law: "Recht & Gericht"
           text: "Gilt österreichisches Recht. Gerichtsstad is Linz, eh kloar."
+
+      tac:
+        title: "Allgemeine G'schäftsbedingunga"
+        last_updated: "Zuletzt g'schaut am: %{date}"
+        parties:
+          title: "Wia g'hört"
+          text: "De AGB galtn fia olle G'schichtn zwischen „Schinkenfuchs“ (da Anbieta) und de Kundschaft."
+        services:
+          title: "Wos ma duan"
+          text: "Da Schinkenfuchs baut da a Webseit, genau so wia'd's wü. Hosting und Wartung kriagst gegen a monatliche G'bühr a dazua."
+        prices:
+          title: "Preis & Zoin"
+          text: "Z'erst wird g'zahlt, daun geht's los. Hosting & Wartung kost monatlich extra. G'zahlt werd über Stripe."
+        delivery:
+          title: "Lieferung & Start"
+          text: "Sobald's Göd do is, fanga ma zum Bauen aun."
+        withdrawal:
+          title: "Widerrufsrecht"
+          text: "Verbraucher hättn eigentlich 14 Tog Widerrufsrecht. Wennst aber gleich losstartn wü, miass ma des Recht aufgeben, sonst derf ma ned angfang'n."
+        rights:
+          title: "Recht & Pflichdn"
+          text: "Da Schinkenfuchs bleibt Urheber. Du kriagst's Recht zum Nutzen - ned mehr, ned weniger. Und koa G'setz brechn, eh kloar."
+        liability:
+          title: "Haftung"
+          text: "Ghaft wird nur bei groba Schlampererei oder mit Absicht. Für a bissl Schlamperei ned, so wia's G'setz sogn duat."
+        final:
+          title: "Zum Schluss"
+          text: "Gilt österreichisches Recht, Gericht is in Linz. Wenn ma de AGB ändan, sogn ma da rechtzeitig Bescheid - wennst ned widersprichst, passt's."

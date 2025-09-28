@@ -14,7 +14,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   scope "(:locale)", locale: /en|de|at/ do
     scope module: "pages" do
-      get "legal/tos", as: :tos
+      get "legal/terms-of-service" => "legal#tos", as: :tos
+      get "legal/terms-and-conditions" => "legal#tac", as: :tac
       get "legal/privacy", as: :privacy
       get "legal/imprint", as: :imprint
     end

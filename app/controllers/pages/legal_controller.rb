@@ -9,4 +9,7 @@ class Pages::LegalController < ApplicationController
 
   def imprint
   end
+
+  def tac
+  end
 end
