@@ -80,3 +80,27 @@ body {
     transform: translateY(0px);
   }
 }
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-slow.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal-slower.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 1.3s ease, transform 1.3s ease;
+}

@@ -27,7 +27,7 @@
 
   <div id="hmp-spacer"></div>
 
-  <section class="pricing">
+  <section data-controller="reveal" class="reveal pricing">
     <div class="hmp-card">
       <h2>STATIC</h2>
       <p class="hmp-subtitle">Simple websites</p>
@@ -66,7 +66,7 @@
   </section>
 
   <section id="hmp-about">
-    <div class="hmp-about-cont">
+    <div class="hmp-about-cont reveal" data-controller="reveal">
       <%= image_tag 'portfolio-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
         <span class="hmp-about-text"><%= t(".about.portfolio") %></span>
@@ -74,7 +74,9 @@
       </div>
     </div>
 
-    <div class="hmp-about-cont">
+    <div class="hmp-about-cont reveal" 
+         data-controller="reveal"
+         data-reveal-class-value="is-visible reveal-slow">
       <%= image_tag 'testimonials-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
         <span class="hmp-about-text"><%= t(".about.testimonials") %></span>
@@ -82,7 +84,9 @@
       </div>
     </div>
 
-    <div class="hmp-about-cont">
+    <div class="hmp-about-cont reveal" 
+         data-controller="reveal"
+         data-reveal-class-value="is-visible reveal-slower">
       <%= image_tag 'process-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
         <span class="hmp-about-text"><%= t(".about.process") %></span>
@@ -91,7 +95,10 @@
     </div>
   </section>
 
-  <section id="hmp-contact">
+  <section id="hmp-contact"
+           class="reveal"
+           data-controller="reveal"
+           data-reveal-class-value="is-visible reveal-slow">
     <span id="hmp-contact-text"> <%= t(".questions") %></span>
     <%= link_to t(".request_question"), root_path, id: "get-website" %>
   </section>
