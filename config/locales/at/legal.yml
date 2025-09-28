@@ -39,5 +39,43 @@ at:
 
       privacy:
         title: "Datnschutz"
+        last_updated: "Zuletzt g'schaut am: %{date}"
+        intro: "Ma is des wichtig, dass deine persönlicha Datn g'scheit g'schützt san.
+                Mir tun dei Zeig nur so verwenden, wia's da G'setzgeber vorgibt (DSGVO, TKG 2003).
+                Dafoch sog ma da, wos bei uns auf da Seit so g'speichert und verarbeitet werd."
+        logs:
+          logs: "Server-Loggs"
+          text_html: "Wennd bei uns auf d'Seit kummst, werd a wengal Zeig automatisch vom Server g'speichert.
+                      Des san z.B.:<br>
+                      <ul>
+                        <li>IP-Adress</li>
+                        <li>Zeitpunkt vom Zugriff</li>
+                        <li>Browser & Betriebssystem</li>
+                        <li>Wos fia Seitn du a'gschaut host</li>
+                      </ul>
+                      Des braucht ma, damit d'Seit g'scheit und sicha lafft.
+                      Grundlag is da Art. 6 Abs. 1 lit. f DSGVO (berechtigts Interesse).
+                      Die Loggs weadn nach ana g'maessna Zeit wieder g'löscht, außer es gibt irgend a Sicherheits-G'schicht."
+        reg:
+          registration_and_user_accounts: "Registrierung & Nutzerkonto"
+          text: "Wennd da a Konto bei uns mochst, speichan ma dei Name, E-Mail und s'Passwort, damit du di einloggn kannst und da die Seit normal nutzn kannst.
+                Grundlag is da Art. 6 Abs. 1 lit. b DSGVO (Vertrag).
+                Passwörter weadn natürlich g'scheit verschlüsselt g'legt – koa Mensch ka des lesen."
+        contact:
+          contact: "Kontakt"
+          text: "Wennd uns a Mail schreibst, nehma dei Datn nur her, damit ma da z'ruckschreibn kennan. Woit wern de ned weiterg'gebn."
+        cookies:
+          cookies: "Keksal"
+          text: "Unsre Seit verwendet nur de Keksal, de ma wirklich brauchn, damit's lafft (z.B. Session-Keksal zum Einloggn).
+                De speichan nix Überflüssigs und weadn automatisch wieda g'löscht, wenn d'Sitzung vorbei is.
+                Grundlag: Art. 6 Abs. 1 lit. f DSGVO (berechtigts Interesse)."
+        yr:
+          your_rights: "Dei Rechte"
+          text: "Du host's Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch.
+                Wennst glaubst, dass bei da Verarbeitung irgendwos ned passt, kannst di bei da Aufsichtsbehörd beschwern.
+                In Österreich is des d'Datnschutzbehörd (https://www.dsb.gv.at)."
+        controller:
+          controller: "Verantwortlicher"
+
       tos:
         title: "Nutzungsbedingunga"

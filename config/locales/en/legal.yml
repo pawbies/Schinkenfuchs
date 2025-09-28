@@ -37,7 +37,46 @@ en:
           privacy_policy: "Privacy Policy"
           text_html: "You can find our Privacy Policy here: %{link}"
 
+
       privacy:
         title: "Privacy Policy"
+        last_updated: "Last updated: %{date}"
+        intro: "We place great importance on protecting your personal data.
+                We process your data exclusively in accordance with the legal requirements (GDPR, Austrian Telecommunications Act 2003).
+                This privacy policy informs you about the key aspects of how we process personal data on our website."
+        logs:
+          logs: "Server Logs"
+          text_html: "When you visit our website, certain technical information is automatically collected by our server and stored in so-called log files. This includes in particular:<br>
+                      <ul>
+                        <li>IP address</li>
+                        <li>Date and time of access</li>
+                        <li>Browser and operating system used</li>
+                        <li>Accessed pages</li>
+                      </ul>
+                      This data is technically necessary to ensure the secure and stable operation of the website.
+                      The legal basis for processing is Article 6(1)(f) GDPR (legitimate interest in providing a secure service).
+                      Log data is automatically deleted after an appropriate retention period, unless security incidents require longer storage."
+        reg:
+          registration_and_user_accounts: "Registration and User Accounts"
+          text: "When you register on our website, we process the personal data you provide (name, email address, and password) to create a user account and give you access to the corresponding features.
+                The legal basis for processing is Article 6(1)(b) GDPR (performance of a contract).
+                Passwords are stored exclusively in encrypted form and cannot be viewed in plain text."
+        contact:
+          contact: "Contact"
+          text: "If you contact us by email, the personal data you provide will be used solely to process your inquiry and will not be shared without your consent."
+        cookies:
+          cookies: "Cookies"
+          text: "Our website uses only technically necessary cookies that are required for the operation of the site (e.g., session cookies for login).
+                These cookies do not store personal data beyond what is strictly necessary and are automatically deleted after the session ends or after a defined period.
+                The legal basis for this is Article 6(1)(f) GDPR (legitimate interest in providing a secure and functional website)."
+        yr:
+          your_rights: "Your Rights"
+          text: "You have the right to access, rectification, erasure, restriction of processing, data portability, withdrawal of consent, and objection.
+                If you believe that the processing of your data violates data protection law or that your data protection rights have been infringed in any other way,
+                you can lodge a complaint with the supervisory authority. In Austria, this is the Data Protection Authority (https://www.dsb.gv.at)."
+        controller:
+          controller: "Controller"
+
+
       tos:
         title: "Terms of Service"
