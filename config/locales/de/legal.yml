@@ -75,5 +75,40 @@ de:
                 können Sie sich bei der Aufsichtsbehörde beschweren. In Österreich ist das die Datenschutzbehörde (https://www.dsb.gv.at"
         controller:
           controller: "Verantwortlicher"
+
       tos:
         title: "Nutzungsbedingungen"
+        last_updated: "Zuletzt aktualisiert: %{date}"
+        scope:
+          scope: "Geltungsbereich"
+          text: "Diese Benutzungsbedingungen gelten für die Nutzung der Website www.schinkenfuchs.com sowie aller angebotenen Funktionen und Dienste. Betreiber der Website ist Schinkenfuchs, [Address]."
+        reg:
+          registration_and_use: "Registrierung & Nutzung"
+          text: "Die Registrierung steht grundsätzlich allen Personen offen. Mit der Anmeldung akzeptieren Nutzer diese Benutzungsbedingungen.
+                Benutzer können über die Plattform eigene Webseiten beantragen, die wir technisch und gestalterisch umsetzen."
+        ob:
+          user_obligations: "Pflichten der Nutzer"
+          text_html: "Nutzer verpflichten sich,
+                    <ul>
+                    <li>keine falschen oder irreführenden Angaben zu machen,</li>
+                    <li>keine Spam-, Hacking- oder sonstigen missbräuchlichen Aktivitäten vorzunehmen,</li>
+                    <li>keine gesetzlichen Bestimmungen zu verletzen.</li>
+                    </ul>
+                    Bei Verstößen behalten wir uns vor, Accounts zu sperren oder Inhalte zu entfernen."
+        pf:
+          paid_features: "Bezahlte Funktionen"
+          text: "Ein Teil der angebotenen Leistungen ist kostenpflichtig. Die Details zu Preisen, Zahlungsarten und Leistungsumfang werden beim jeweiligen Angebot klar ausgewiesen.
+                Mit der Bestellung kostenpflichtiger Funktionen kommt ein Vertrag zwischen dem Nutzer und dem Betreiber zustande."
+        al:
+          availability_and_liability: "Verfügbarkeit & Haftung"
+          text: "Wir bemühen uns um eine hohe Verfügbarkeit der Plattform, können diese aber nicht garantieren.
+                Für Ausfälle oder Datenverluste wird nur im Rahmen der gesetzlichen Bestimmungen gehaftet."
+        ip:
+          intellectual_property: "Urheberrecht"
+          text: "Sämtliche Inhalte und erstellten Webseiten bleiben urheberrechtlich geschützt. Nutzer erhalten einfache Nutzungsrechte im Rahmen der vereinbarten Leistung."
+        ctt:
+          changes_to_terms: "Änderungen der Bedingungen"
+          text: "Wir behalten uns vor, diese Benutzungsbedingungen jederzeit zu ändern. Über wesentliche Änderungen werden Nutzer rechtzeitig informiert."
+        gl:
+          governing_law: "Anwendbares Recht"
+          text: "Es gilt österreichisches Recht. Gerichtsstand ist Linz."

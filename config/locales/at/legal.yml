@@ -60,7 +60,7 @@ at:
           registration_and_user_accounts: "Registrierung & Nutzerkonto"
           text: "Wennd da a Konto bei uns mochst, speichan ma dei Name, E-Mail und s'Passwort, damit du di einloggn kannst und da die Seit normal nutzn kannst.
                 Grundlag is da Art. 6 Abs. 1 lit. b DSGVO (Vertrag).
-                Passwörter weadn natürlich g'scheit verschlüsselt g'legt – koa Mensch ka des lesen."
+                Passwörter weadn natürlich g'scheit verschlüsselt g'legt - koa Mensch ka des lesen."
         contact:
           contact: "Kontakt"
           text: "Wennd uns a Mail schreibst, nehma dei Datn nur her, damit ma da z'ruckschreibn kennan. Woit wern de ned weiterg'gebn."
@@ -79,3 +79,37 @@ at:
 
       tos:
         title: "Nutzungsbedingunga"
+        last_updated: "Zuletzt g'schaut am: %{date}"
+        scope:
+          scope: "Wos gilt"
+          text: "De Nutzungsbedingunga galtn fia d'Seit www.schinkenfuchs.com und olles, wos ma do so nutzn ko. Betriaba is da Schinkenfuchs, [Adress]."
+        reg:
+          registration_and_use: "Registrierung & Nutzung"
+          text: "Amelden derf si basically a jeda. Wennst di anmeldst, sogst zua, dass'd de Nutzungsbedingunga akzeptierst.
+                Über d'Seit kannst da a eigene Webseit beantragen, de ma da dann basteln und gscheit aufzochn."
+        ob:
+          user_obligations: "Wos d'Leit einhoitn miassn"
+          text_html: "D'Nutzer verpflichtn si, 
+                      <ul>
+                      <li>koa Blödsinn ei'zutrogn,</li>
+                      <li>koan Spam oda Hackerei oda sonst a Schmarrn z'mochn,</li>
+                      <li>und si ans G'setz z'holtn.</li>
+                      </ul>
+                      Wia sogn da ned lang rum - wenn wem des ned passt, sperrn ma da Account oda schmeissn Zeig außa."
+        pf:
+          paid_features: "Bezahlte G'schichtn"
+          text: "A Teil von unsern Sachen kost a wengal wos. Wievü, wia und wos genau kriagst, steht eh beim Angebot dabei.
+                Wennst wos bestellst, host an Vertrag mit uns, ganz offiziell."
+        al:
+          availability_and_liability: "Verfügbarkeit & Haftung"
+          text: "Mia schaugn, dass de Seit rund um d'Uhr lafft, oba garantiern kinnan ma nix.
+                Wenn amoi wos ausfällt oda a Datn futsch san, dann nur im gesetzlichen Rahmen."
+        ip:
+          intellectual_property: "Urheberrecht"
+          text: "Olles, wos ma macha und basteln, bleibt unser Werk. Du kriagst des Nutzungsrecht fia des, wos ausgmacht is – oba ned mehr."
+        ctt:
+          changes_to_terms: "Ändarunga"
+          text: "Ma kennt de Bedingunga jederzeit ändan. Wenn wos Größers kummt, sogn ma da natürlich rechtzeitig Bescheid."
+        gl:
+          governing_law: "Recht & Gericht"
+          text: "Gilt österreichisches Recht. Gerichtsstad is Linz, eh kloar."

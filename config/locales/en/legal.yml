@@ -77,6 +77,39 @@ en:
         controller:
           controller: "Controller"
 
-
       tos:
         title: "Terms of Service"
+        last_updated: "Last updated: %{date}"
+        scope:
+          scope: "Scope"
+          text: "These Terms of Service apply to the use of the website www.schinkenfuchs.com and all functions and services offered. The website is operated by Schinkenfuchs, [Address]."
+        reg:
+          registration_and_use: "Registration & Use"
+          text: "Registration is open to all users. By signing up, users accept these Terms of Service.
+                Users can request their own websites through the platform, which we design and develop."
+        ob:
+          user_obligations: "User Obligations"
+          text_html: "Users agree to:
+                      <ul>
+                      <li>provide accurate and non-misleading information,</li>
+                      <li>refrain from spam, hacking, or any abusive activities,</li>
+                      <li>comply with applicable laws.</li>
+                      </ul>
+                      We reserve the right to suspend accounts or remove content in case of violations."
+        pf:
+          paid_features: "Paid Features"
+          text: "Some services are paid. Details on prices, payment methods, and the scope of services are clearly indicated with each offer.
+                By ordering paid features, a contract between the user and the operator is concluded."
+        al:
+          availability_and_liability: "Availability & Liability"
+          text: "We strive to keep the platform highly available but cannot guarantee uninterrupted operation.
+                Liability for outages or data loss is limited to the extent permitted by law."
+        ip:
+          intellectual_property: "Intellectual Property"
+          text: "All content and created websites remain protected by copyright. Users receive simple usage rights as agreed in their individual service contract."
+        ctt:
+          changes_to_terms: "Changes to the Terms"
+          text: "We may change these Terms of Service at any time. Users will be informed of significant changes in advance."
+        gl:
+          governing_law: "Governing Law"
+          text: "Austrian law applies. Place of jurisdiction is Linz."
