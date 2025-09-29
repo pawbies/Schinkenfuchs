@@ -7,7 +7,7 @@
 
   margin: 1rem auto;
 
-  height: 400px;
+  min-height: 400px;
 }
 
 #auth-text-cont {
@@ -86,3 +86,12 @@
 #login-t2 {top: 60%; left: 90%; animation-duration: 5.4s;}
 #login-t3 {top: 20%; left: 80%; animation-name: floatingtrianglemin; animation-duration: 4.2s;}
 #login-t4 {top: 50%; left: 12%; animation-duration: 4.6s;}
+
+
+@media (max-width: 800px) {
+  #auth-container {
+    flex-direction: column;
+    gap: 0.5em;
+    min-height: 600px;
+  }
+}
