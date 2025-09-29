@@ -20,6 +20,8 @@ Rails.application.routes.draw do
       get "legal/imprint", as: :imprint
     end
 
+    get "about" => "pages#about"
+
     root "pages#homepage"
   end
 end
