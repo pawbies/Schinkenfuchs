@@ -73,3 +73,16 @@
 
 .auth-alert { color: #f87171; margin: 0.5rem 0; }
 .auth-notice { color: var(--blue); margin: 0.5rem 0; }
+
+#triangle-cont-login {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+  z-index: -1;
+}
+
+#login-t1 {top: 10%; left: 15%; animation-name: floatingtrianglemin; animation-duration: 5s;}
+#login-t2 {top: 60%; left: 90%; animation-duration: 5.4s;}
+#login-t3 {top: 20%; left: 80%; animation-name: floatingtrianglemin; animation-duration: 4.2s;}
+#login-t4 {top: 50%; left: 12%; animation-duration: 4.6s;}
