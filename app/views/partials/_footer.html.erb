@@ -15,7 +15,7 @@
     </div>
     <div id="request-cont">
       <%= link_to t(".request_website"), root_path, id: "get-website-footer" %>
-      <span id="footer-email">Schinken@Fuchs.at</span>
+      <span id="footer-email"><%= mail_to "contact@schinkenfuchs.com" %></span>
     </div>
 
     <div id="footer-link-cont">
@@ -23,7 +23,7 @@
         <div class="footer-link-wrap">
           <span class="footer-heading"><%= t(".company")%></span>
           <div></div>
-          <%= link_to t(".about_us"), about_path, class: "footer-link" %>
+          <%= link_to t(".about_us"), about_us_path, class: "footer-link" %>
           <%= link_to t(".our_work"), root_path, class: "footer-link" %>
           <%= link_to t(".testimonials"), root_path, class: "footer-link" %>
         </div>

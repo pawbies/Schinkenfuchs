@@ -5,6 +5,6 @@ class PagesController < ApplicationController
     # test
   end
 
-  def about
+  def about_us
   end
 end

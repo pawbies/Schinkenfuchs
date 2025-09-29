@@ -8,10 +8,9 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
-  # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
-  # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
+  get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
+  get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
-  # Defines the root path route ("/")
   scope "(:locale)", locale: /en|de|at/ do
     scope module: "pages" do
       get "legal/terms-of-service" => "legal#tos", as: :tos
@@ -20,7 +19,7 @@ Rails.application.routes.draw do
       get "legal/imprint", as: :imprint
     end
 
-    get "about" => "pages#about"
+    get "about-us" => "pages#about_us"
 
     root "pages#homepage"
   end
