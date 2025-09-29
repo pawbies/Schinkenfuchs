@@ -78,11 +78,16 @@
     <div id="mobile-link-cont">
       <div id="mobile-link-wrap">
         <div id="spacing-mobilelink"></div>
-        <span class="mobile-nav-link"><%= t(".others") %></span>
+        <%= link_to t(".others"), root_path, class: "mobile-nav-link" %>
         <div class="line-mobile-link"></div>
-        <span class="mobile-nav-link"><%= t(".chill") %></span>
+        <%= link_to t(".chill"), root_path, class: "mobile-nav-link" %>
         <div class="line-mobile-link"></div>
-        <span class="mobile-nav-link"><%= t(".links") %></span>
+          <% if authenticated? %>
+            <%= link_to t(".dashboard"), root_path, class: "mobile-nav-link" %>
+            <%= button_to "Logout - just for testing", session_path, method: :delete %>
+          <% else %>
+            <%= link_to t(".login"), new_session_path, class: "mobile-nav-link" %>
+          <% end %>
         <div class="line-mobile-link long-mobile-link"></div>
 
         <div id="mobile-link-options">

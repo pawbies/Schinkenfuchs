@@ -264,6 +264,10 @@ nav {
 
 .mobile-nav-link {
   font-size: 18px;
+
+  cursor: pointer;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 #mobile-link-options {
