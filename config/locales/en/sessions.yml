@@ -1,0 +1,10 @@
+en:
+  sessions:
+    try_again_later: "Try again later."
+
+    create:
+      successfully_logged_in: "Successfully logged in as %{name}."
+      try_another_email_or_password: "Try another email address or password."
+    
+    destroy:
+      successfully_logged_out: "Successfully logged out of your account."

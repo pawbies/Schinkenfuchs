@@ -1,0 +1,10 @@
+at:
+  sessions:
+    try_again_later: "Vasuachs nochher nuaoi."
+
+    create:
+      successfully_logged_in: "Erfolgreich ois %{name} ongemöt."
+      try_another_email_or_password: "Probier a ondare Email oda Passwort."
+    
+    destroy:
+      successfully_logged_out: "Erfoigreich obgmöt."

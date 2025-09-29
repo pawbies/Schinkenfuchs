@@ -9,7 +9,12 @@
     <div class="nav-dot"></div>
     <%= link_to t(".chill"), root_path, class: "nav-link" %>
     <div class="nav-dot"></div>
-    <%= link_to t(".links"), root_path, class: "nav-link" %>
+    <% if authenticated? %>
+      <%= link_to t(".dashboard"), root_path, class: "nav-link" %>
+      <%= button_to "Logout - just for testing", session_path, method: :delete %>
+    <% else %>
+      <%= link_to t(".login"), new_session_path, class: "nav-link" %>
+    <% end %>
   </div>
   
   <div id="right-cont" data-controller="bulb-switch">
@@ -49,7 +54,7 @@
   </div>
 </nav>
 
-<!-- Mobile -->
+<%# Mobile #%>
 <div id="mobile-nav" data-controller="mobile-nav">
   <div id="plaque" data-mobile-nav-target="plaque"></div>
   <div id="mobile-top">
