@@ -21,7 +21,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 485px;
+  width: 650px;
 }
 
 #cred-cont {
@@ -60,6 +60,15 @@ footer {
 
 #footer-email {
   padding-left: 25px;
+}
+
+#footer-email a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+#footer-email a:hover {
+  text-decoration: underline;
 }
 
 #footer-link-cont {
