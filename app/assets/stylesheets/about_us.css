@@ -1,0 +1,18 @@
+#about-cont {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+
+  min-height: 500px;
+}
+
+#about-spacer {
+  height: 200px;
+  width: 5px;
+  border-radius: 2px;
+  background-color: var(--text-color);
+}
+
+.about-us-wrap {
+
+}
