@@ -1,0 +1,2 @@
+module Pages::CompanyHelper
+end

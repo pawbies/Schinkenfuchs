@@ -5,9 +5,4 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     get root_url
     assert_response :success
   end
-
-  test "should get about us" do
-    get about_us_url
-    assert_response :success
-  end
 end

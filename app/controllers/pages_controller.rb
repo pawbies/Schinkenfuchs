@@ -4,7 +4,4 @@ class PagesController < ApplicationController
   def homepage
     # test
   end
-
-  def about_us
-  end
 end

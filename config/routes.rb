@@ -18,6 +18,10 @@ Rails.application.routes.draw do
       get "legal/terms-and-conditions" => "legal#tac", as: :tac
       get "legal/privacy", as: :privacy
       get "legal/imprint", as: :imprint
+
+      get "company/about-us" => "company#about_us", as: :about_us
+      get "company/our-work" => "company#our_work", as: :our_work
+      get "company/testimonials" => "company#testimonials", as: :testimonials
     end
 
     get "about-us" => "pages#about_us"
