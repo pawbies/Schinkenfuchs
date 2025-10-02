@@ -1,0 +1,47 @@
+.company-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  padding-bottom: 4em;
+  margin-top: 6em;
+}
+
+.company-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 55%;
+}
+
+#underwhelming {
+  margin-top: 5em;
+  font-size: 54px;
+}
+
+.company-wrap h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.testimonial {
+  width: 90%;
+  min-height: 250px;
+  border-radius: 25px;
+  border: 2px solid var(--text-color);
+}
+
+.testimonial h2 {
+  font-weight: 300;
+  margin: 1em 2em;
+}
+
+.testimonial span {
+  font-weight: 300;
+  margin: 1em 0 0 5em;
+  opacity: 0.6;
+}
