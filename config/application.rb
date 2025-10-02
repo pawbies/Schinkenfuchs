@@ -41,5 +41,11 @@ module Schinkenfuchs
 
     config.time_zone = "Vienna"
     config.active_record.default_timezone = :utc
+
+    config.stripe = {
+      publishable_key: Rails.application.credentials.dig(:smtp, :publishable_key),
+      secret_key: Rails.application.credentials.dig(:stripe, :secret_key)
+    }
+    Stripe.api_key = Rails.application.credentials.dig(:stripe, :secret_key)
   end
 end
