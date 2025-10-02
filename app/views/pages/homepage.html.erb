@@ -64,33 +64,31 @@
   </section>
 
   <section id="hmp-about">
-    <div class="hmp-about-cont reveal" data-controller="reveal">
+    <%# path aint here %>
+    <%= link_to root_path, class: "hmp-about-cont reveal", data: { controller: "reveal" } do %>
       <%= image_tag 'portfolio-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
         <span class="hmp-about-text"><%= t(".about.portfolio") %></span>
         <span class="hmp-about-subtext"><%= t(".about.recent_work") %></span>
       </div>
-    </div>
+    <% end %>
 
-    <div class="hmp-about-cont reveal" 
-         data-controller="reveal"
-         data-reveal-class-value="is-visible reveal-slow">
+    <%= link_to testimonials_path, class: "hmp-about-cont reveal", data: { controller: "reveal", reveal_class_value: "is-visible reveal-slow" } do %>
       <%= image_tag 'testimonials-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
         <span class="hmp-about-text"><%= t(".about.testimonials") %></span>
         <span class="hmp-about-subtext"><%= t(".about.what_our_clients_say") %></span>
       </div>
-    </div>
+    <% end %>
 
-    <div class="hmp-about-cont reveal" 
-         data-controller="reveal"
-         data-reveal-class-value="is-visible reveal-slower">
+    <%# path aint here %>
+    <%= link_to root_path, class: "hmp-about-cont reveal", data: { controller: "reveal", reveal_class_value: "is-visible reveal-slower" } do %>
       <%= image_tag 'process-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
         <span class="hmp-about-text"><%= t(".about.process") %></span>
         <span class="hmp-about-subtext"><%= t(".about.how_it_works") %></span>
       </div>
-    </div>
+    <% end %>
   </section>
 
   <section id="hmp-contact"

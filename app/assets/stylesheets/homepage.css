@@ -132,6 +132,9 @@
 .hmp-about-cont {
   display: flex;
 
+  color: var(--text-color);
+  text-decoration: none;
+
   gap: 1em;
   
   padding: 0 2rem;
