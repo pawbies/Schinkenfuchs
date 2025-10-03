@@ -1,17 +1,16 @@
-<div id="auth-container" data-controller="fade">
+<div id="auth-container" data-controller="fade pwdpopup">
   <div id="triangle-cont-login">
     <%= image_tag 'triangles/tallL.svg', id: "login-t1", class: "triangle" %>
     <%= image_tag 'triangles/smallhoriz.svg', id: "login-t2", class: "triangle" %>
     <%= image_tag 'triangles/smallvert.svg', id: "login-t3", class: "triangle" %>
     <%= image_tag 'triangles/L.svg', id: "login-t4", class: "triangle" %>
   </div>
-  <div id="auth-text-cont" data-fade-target="elem" class="login-fade">
+  <div id="auth-text-cont" data-fade-target="elem" data-pwdpopup-target="text" class="login-fade signin-stay">
     <h1>Welcome Back!</h1>
-    <%# path not correct yet %>
     <span>- please note, this login is only for our existing customers, if you wish to order a website visit <%= link_to "This Page", root_path(anchor: "hmp-spacer"), id: "auth-link" %></span>
   </div>
 
-  <div id="auth-wrap" data-fade-target="elem" class="login-fade">
+  <div data-fade-target="elem" data-pwdpopup-target="signin" class="login-fade auth-wrap signin-stay">
     <h2>Sign in</h2>
 
     <%= tag.div(flash[:alert], class: "auth-alert") if flash[:alert] %>
@@ -38,7 +37,27 @@
     <% end %>
 
     <div id="auth-links">
-      <%= link_to "Forgot password?", new_password_path(from: "forgot") %>
+      <span data-action="click->pwdpopup#toggle">Forgot Password?</span>
+      <noscript><%= link_to "Back?", new_password_path(from: "forgot") %></noscript>
+    </div>
+  </div>
+  <div data-fade-target="elem" data-pwdpopup-target="pwd" class="login-fade pwd-hidden auth-wrap pwd-wrap">
+    <h2>Forgot password?</h2>
+
+    <%= tag.div(flash[:alert], class: "auth-alert") if flash[:alert] %>
+    <%= tag.div(flash[:notice], class: "auth-notice") if flash[:notice] %>
+
+    <%= form_with url: session_path, class: "auth-form" do |form| %>
+      <div class="auth-field">
+        <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your email address", value: params[:email_address] %><br>
+      </div>
+      <div class="auth-field">
+        <%= form.submit "Email reset instructions", id: "auth-button" %>
+      </div>
+    <% end %>
+
+    <div id="auth-links">
+      <span data-action="click->pwdpopup#back">Back?</span>
     </div>
   </div>
 </div>

@@ -1,17 +1,18 @@
+<turbo-frame id="login">
 <div id="auth-container" data-controller="fade">
   <div id="triangle-cont-login">
-    <%= image_tag 'triangles/tallL.svg', id: "login-t1", class: "triangle" %>
-    <%= image_tag 'triangles/smallhoriz.svg', id: "login-t2", class: "triangle" %>
-    <%= image_tag 'triangles/smallvert.svg', id: "login-t3", class: "triangle" %>
-    <%= image_tag 'triangles/L.svg', id: "login-t4", class: "triangle" %>
+    <%= image_tag 'triangles/tallL.svg', id: "login-t1", class: "triangle", data: {turbo_permanent: true} %>
+    <%= image_tag 'triangles/smallhoriz.svg', id: "login-t2", class: "triangle", data: {turbo_permanent: true} %>
+    <%= image_tag 'triangles/smallvert.svg', id: "login-t3", class: "triangle", data: {turbo_permanent: true} %>
+    <%= image_tag 'triangles/L.svg', id: "login-t4", class: "triangle", data: {turbo_permanent: true} %>
   </div>
+  
   <div id="auth-text-cont" data-fade-target="elem" class="passwd-fade">
     <h1>Welcome Back!</h1>
-    <%# path not correct yet %>
     <span>- please note, this login is only for our existing customers, if you wish to order a website visit <%= link_to "This Page", root_path(anchor: "hmp-spacer"), id: "auth-link" %></span>
   </div>
 
-  <div id="auth-wrap" data-fade-target="elem" class="passwd-fade">
+  <div class="auth-wrap" data-fade-target="elem" class="passwd-fade">
     <h2>Forgot password?</h2>
 
     <%= tag.div(flash[:alert], class: "auth-alert") if flash[:alert] %>
@@ -30,4 +31,6 @@
       <%= link_to "Back?", new_session_path(from: "forgot") %>
     </div>
   </div>
+ 
 </div>
+</turbo-frame>
