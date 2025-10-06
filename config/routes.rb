@@ -25,6 +25,10 @@ Rails.application.routes.draw do
       get "company/testimonials" => "company#testimonials", as: :testimonials
     end
 
+    namespace :website do
+      resources :requests, only: :new
+    end
+
     root "pages#homepage"
   end
 end
