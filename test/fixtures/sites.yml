@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Cute Website
+  plan: static
+  size: medium
+  customer: one
+  accepted: false
+
+two:
+  title: Silly Website
+  plan: dynamic
+  size: large
+  customer: one
+  accepted: true
