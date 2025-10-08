@@ -1,91 +1,92 @@
 <div id="hmp-spacer"></div>
 
-<section data-controller="reveal" class="reveal pricing">
-  <div class="hmp-card">
-    <h2>STATIC</h2>
-    <p class="hmp-subtitle">Simple websites</p>
-    <p class="hmp-price">€99</p>
-    <ul>
-    <li>One page</li>
-    <li>Fast & lightweight</li>
-    <li>Basic styling</li>
-    </ul>
-    <button>Choose plan</button>
-  </div>
+<div data-controller="website">
+  <section data-controller="reveal" data-reveal-class="is-visible" class="reveal pricing">
+    <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
+      <h2>STATIC</h2>
+      <p class="hmp-subtitle">Simple websites</p>
+      <p class="hmp-price">€99</p>
+      <ul>
+        <li>One page</li>
+        <li>Fast & lightweight</li>
+        <li>Basic styling</li>
+      </ul>
+      <button type="button">Choose plan</button>
+    </div>
 
-  <div class="hmp-card hmp-featured">
-    <h2>DYNAMIC</h2>
-    <p class="hmp-subtitle">Interactive websites</p>
-    <p class="hmp-price">€299</p>
-    <ul>
-    <li>Multi-page</li>
-    <li>Custom components</li>
-    <li>Backend integration</li>
-    </ul>
-    <button>Most popular</button>
-  </div>
+    <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
+      <h2>DYNAMIC</h2>
+      <p class="hmp-subtitle">Interactive websites</p>
+      <p class="hmp-price">€299</p>
+      <ul>
+        <li>Multi-page</li>
+        <li>Custom components</li>
+        <li>Backend integration</li>
+      </ul>
+      <button type="button">Most popular</button>
+    </div>
 
-  <div class="hmp-card">
-    <h2>Scalable</h2>
-    <p class="hmp-subtitle">Scalable solutions</p>
-    <p class="hmp-price">€599</p>
-    <ul>
-    <li>Unlimited pages</li>
-    <li>Advanced features</li>
-    <li>Priority support</li>
-    </ul>
-    <button>Choose plan</button>
-  </div>
-</section>
+    <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
+      <h2>SCALABLE</h2>
+      <p class="hmp-subtitle">Scalable solutions</p>
+      <p class="hmp-price">€599</p>
+      <ul>
+        <li>Unlimited pages</li>
+        <li>Advanced features</li>
+        <li>Priority support</li>
+      </ul>
+      <button type="button">Choose plan</button>
+    </div>
+  </section>
 
-<div class="website-form static">
-  <div class="question-cont">
-    <h1>How big will your site be?</h1>
-
-    <div class="size-cont">
-      <div class="size-wrap">
-        <input type="radio" id="small" name="sitesize" value="small" />
-        <label for="small" class="sizelabel">Small <span class="size-ex">ex.: Portfolio</span></label>
+  <!-- STATIC FORM -->
+  <div class="website-form static hidden-site" data-website-target="form">
+    <div class="question-cont" data-website-target="question">
+      <h1>How big will your site be?</h1>
+      <div class="size-cont">
+        <div class="size-wrap">
+          <input type="radio" name="size_static" value="small" data-action="change->website#advance">
+          <label>Small <span class="size-ex">ex.: Portfolio</span></label>
+        </div>
+        <div class="size-wrap">
+          <input type="radio" name="size_static" value="middle" data-action="change->website#advance">
+          <label>Middle <span class="size-ex">ex.: Infosite</span></label>
+        </div>
+        <div class="size-wrap">
+          <input type="radio" name="size_static" value="big" data-action="change->website#advance">
+          <label>Big <span class="size-ex">ex.: Company-site</span></label>
+        </div>
       </div>
+    </div>
 
-      <div class="size-wrap">
-        <input type="radio" id="middle" name="sitesize" value="middle" />
-        <label for="middle">Middle <span class="size-ex">ex.: Infosite??</label>
+    <div class="question-cont" data-website-target="question">
+      <h1>What do you have in mind?</h1>
+      <div class="size-cont">
+        <input type="text" placeholder="Write your mind" data-action="change->website#advance">
       </div>
+    </div>
 
-      <div class="size-wrap">
-        <input type="radio" id="big" name="sitesize" value="big" />
-        <label for="big">Big <span class="size-ex">ex.: Company-site</label>
+    <div class="question-cont" data-website-target="question">
+      <h1>TextArea style</h1>
+      <div class="size-cont">
+        <textarea placeholder="Write your mind" data-action="change->website#advance"></textarea>
       </div>
     </div>
   </div>
 
-  <div class="question-cont">
-    <h1>What do you have in mind?</h1>
-
-    <div class="size-cont">
-      <div class="size-wrap">
-        <input type="input" class="questioninput" name="input" placeholder="Writeyo mind" />
-      </div>
+  <!-- DYNAMIC FORM -->
+  <div class="website-form dynamic hidden-site" data-website-target="form">
+    <div class="question-cont" data-website-target="question">
+      <h1>Dynamic plan question 1</h1>
+      <input type="text" data-action="change->website#advance">
     </div>
   </div>
 
-  <div class="question-cont">
-    <h1>TextArea style</h1>
-
-    <div class="size-cont">
-      <div class="size-wrap">
-        <textarea class="questionarea" name="area" placeholder="Writeyo mind"></textarea>
-      </div>
+  <!-- SCALABLE FORM -->
+  <div class="website-form scalable hidden-site" data-website-target="form">
+    <div class="question-cont" data-website-target="question">
+      <h1>Scalable plan question 1</h1>
+      <input type="text" data-action="change->website#advance">
     </div>
   </div>
-</div>
-
-
-<div class="website-form dynamic hidden-site">
-
-</div>
-
-<div class="website-form scalable hidden-site">
-
 </div>
