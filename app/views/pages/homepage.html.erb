@@ -21,6 +21,13 @@
       <span class="hmp-heading-wd"><%= t(".slogan.you") %></span>
     </h1>
 
+    <% if Rails.env.production? %>
+      <div id="disclaimer">
+        <span id="desclaimer-text"><%= t(".disclaimer") %></span>
+      </div>
+    <% end %>
+    
+
   </div>
 
   <div id="hmp-spacer"></div>

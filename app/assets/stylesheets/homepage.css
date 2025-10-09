@@ -282,3 +282,20 @@
   #t9 { display: none; }
   #t12 { top: 50%; left: 75%; animation-name: floatingtrianglemin; animation-duration: 5.2s; }
 }
+
+#disclaimer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+#desclaimer-text {
+  color: red;
+  font-size: 102px;
+  font-weight: 800;
+  text-align: center;
+}
