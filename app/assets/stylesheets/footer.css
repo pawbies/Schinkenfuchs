@@ -149,6 +149,10 @@ footer {
   cursor: pointer;
 }
 
+.footer-icon-hidden {
+  display: none;
+} 
+
 .legal-link {
   text-decoration: none;
   color: var(--blue);

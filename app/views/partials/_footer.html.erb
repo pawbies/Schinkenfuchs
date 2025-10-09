@@ -45,9 +45,19 @@
       </div>
       <div id="footer-scndlink-cont">
         <span id="footer-copyright">© Schinkenfuchs <%= Date.current.year %></span>
-        <div>
+        <div data-controller="bulb-switch">
           <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
-            <%= image_tag 'github-dm.svg', class: "footer-icon" %>
+            <%= image_tag 'github-dm.svg',
+              alt: "Github",
+              class: "footer-icon",
+              width: 25, height: 25,
+              data: { bulb_switch_target: "dark" } %>
+
+            <%= image_tag 'github-lm.svg',
+              alt: "Github",
+              class: "footer-icon mode-switch-hidden",
+              width: 25, height: 25,
+              data: { bulb_switch_target: "light" } %>
           <% end %>
         </div>
       </div>
