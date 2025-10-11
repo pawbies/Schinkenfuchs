@@ -64,7 +64,7 @@
 }
 
 .hmp-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02);
   box-shadow: 0 6px 16px rgba(0,0,0,0.6);
 }
 
@@ -74,10 +74,25 @@
   margin-bottom: 0.5rem;
 }
 
+.hmp-desc {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
 .hmp-subtitle {
   font-size: 0.9rem;
   color: #aaa;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  margin-top: 0.2rem;
+}
+
+.hmp-info {
+  height: 20px;
+}
+
+.hmp-info:hover {
+  
 }
 
 .hmp-price {
@@ -119,7 +134,7 @@
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 9999px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
   transition: background 0.2s ease;
