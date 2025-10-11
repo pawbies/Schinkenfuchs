@@ -32,7 +32,7 @@
 
   <div id="hmp-spacer"></div>
 
-  <section data-controller="reveal" class="reveal pricing">
+  <section data-controller="reveal website" class="reveal pricing">
     <div class="hmp-card">
       <h2>STATIC</h2>
       <p class="hmp-subtitle">Simple websites</p>
@@ -42,7 +42,7 @@
         <li>Fast & lightweight</li>
         <li>Basic styling</li>
       </ul>
-      <button>Choose plan</button>
+      <%= link_to "Choose Plan", new_website_request_path(plan: "static") %>
     </div>
 
     <div class="hmp-card hmp-featured">
@@ -54,7 +54,7 @@
         <li>Custom components</li>
         <li>Backend integration</li>
       </ul>
-      <button>Most popular</button>
+      <%= link_to "Choose Plan", new_website_request_path(plan: "dynamic") %>
     </div>
 
     <div class="hmp-card">
@@ -66,7 +66,7 @@
         <li>Advanced features</li>
         <li>Priority support</li>
       </ul>
-      <button>Choose plan</button>
+      <%= link_to "Choose Plan", new_website_request_path(plan: "scalable") %>
     </div>
   </section>
 

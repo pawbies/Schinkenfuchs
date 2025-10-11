@@ -30,9 +30,9 @@
         <div class="footer-link-wrap">
           <span class="footer-heading"><%= t(".services") %></span>
           <div></div>
-          <%= link_to t(".static"), root_path, class: "footer-link" %>
-          <%= link_to t(".dynamic"), root_path, class: "footer-link" %>
-          <%= link_to t(".scalable"), root_path, class: "footer-link" %>
+          <%= link_to t(".static"), new_website_request_path(plan: "static"), class: "footer-link" %>
+          <%= link_to t(".dynamic"), new_website_request_path(plan: "dynamic"), class: "footer-link" %>
+          <%= link_to t(".scalable"), new_website_request_path(plan: "scalable"), class: "footer-link" %>
         </div>
         <div class="footer-link-wrap">
           <span class="footer-heading"><%= t(".legal_info") %></span>

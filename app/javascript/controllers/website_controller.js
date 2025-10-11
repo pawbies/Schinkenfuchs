@@ -3,6 +3,34 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["card", "form", "question"];
 
+  connect() {
+    const params = new URLSearchParams(window.location.search);
+    const plan = params.get("plan");
+    if (plan) {
+      requestAnimationFrame(() => this.showPlan(plan));
+    }
+  }
+
+  showPlan(planName) {
+    const card = this.cardTargets.find(
+      c => c.querySelector("h2").innerText.trim().toLowerCase() === planName
+    );
+    if (!card) return;
+
+    this.cardTargets.forEach(c => {
+      c.classList.toggle("is-active", c === card);
+    });
+
+    this.formTargets.forEach(form => {
+      if (form.classList.contains(planName)) {
+        form.classList.remove("hidden-site");
+        form.scrollIntoView({ behavior: "smooth" });
+      } else {
+        form.classList.add("hidden-site");
+      }
+    });
+  }
+
   revealform(e) {
     const card = e.currentTarget;
     const planName = card.querySelector("h2").innerText.trim().toLowerCase();
