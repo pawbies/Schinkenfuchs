@@ -55,7 +55,7 @@
 
 <%# Mobile #%>
 <div id="mobile-nav" data-controller="mobile-nav">
-  <div id="plaque" data-mobile-nav-target="plaque"></div>
+  <div id="plaque" data-mobile-nav-target="plaque" data-action="click->mobile-nav#toggle"></div>
   <div id="mobile-top">
 
     <%= link_to root_path, id: "mobile-logo-cont" do %>
