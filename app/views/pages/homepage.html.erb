@@ -107,7 +107,7 @@
     <% end %>
 
     <%# path aint here %>
-    <%= link_to root_path, class: "hmp-about-cont reveal", data: { controller: "reveal", reveal_class_value: "is-visible reveal-slower" } do %>
+    <%= link_to process_path, class: "hmp-about-cont reveal", data: { controller: "reveal", reveal_class_value: "is-visible reveal-slower" } do %>
       <%= image_tag 'process-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
         <span class="hmp-about-text"><%= t(".about.process") %></span>

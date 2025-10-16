@@ -24,6 +24,7 @@ Rails.application.routes.draw do
       get "company/our-work" => "company#our_work", as: :our_work
       get "company/testimonials" => "company#testimonials", as: :testimonials
     end
+    get "process" => "pages#processes"
 
     namespace :website do
       resources :requests, only: :new
