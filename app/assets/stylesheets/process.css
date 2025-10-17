@@ -1,0 +1,37 @@
+#process-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  width: 100vw;
+  height: auto;
+  padding: 50px 0;
+}
+
+#process-heading {
+  font-size: 54px;
+  font-weight: 200;
+}
+
+.p-step {
+  display: flex;
+  align-items: space-evenly;
+  width: auto;
+  height: auto;
+}
+
+.p-even-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+  gap: 10px;
+}
+
+.process-tutcont {
+  display: flex;
+  flex-direction: column;
+  gap: 80px
+}
