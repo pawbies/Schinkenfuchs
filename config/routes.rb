@@ -25,6 +25,7 @@ Rails.application.routes.draw do
       get "company/testimonials" => "company#testimonials", as: :testimonials
     end
     get "process" => "pages#processes"
+    get "timeline" => "pages#timeline"
 
     namespace :website do
       resources :requests, only: :new

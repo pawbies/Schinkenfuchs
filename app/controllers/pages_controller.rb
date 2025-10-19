@@ -6,4 +6,7 @@ class PagesController < ApplicationController
 
   def processes
   end
+
+  def timeline
+  end
 end

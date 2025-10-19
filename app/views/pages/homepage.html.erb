@@ -90,7 +90,7 @@
 
   <section id="hmp-about">
     <%# path aint here %>
-    <%= link_to root_path, class: "hmp-about-cont reveal", data: { controller: "reveal" } do %>
+    <%= link_to timeline_path, class: "hmp-about-cont reveal", data: { controller: "reveal" } do %>
       <%= image_tag 'portfolio-dm.svg', width: 50, height: 50 %>
       <div class="hmp-about-text-wrap">
         <span class="hmp-about-text"><%= t(".about.timeline") %></span>
