@@ -2,8 +2,7 @@ require "test_helper"
 
 class WebsiteRequestsMailerTest < ActionMailer::TestCase
   setup do
-    # @website_request = website_requests(:one)
-    @website_request = Website::Request.take
+    @website_request = website_requests(:one)
   end
 
   test "verify" do
