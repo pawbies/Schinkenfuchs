@@ -1,6 +1,6 @@
 <div id="hmp-spacer"></div>
 
-<div data-controller="website">
+<%= form_with model: @website_request, data: { controller: "website" } do %>
   <section data-controller="reveal" data-reveal-class="is-visible" class="reveal pricing">
     <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
       <h2>STATIC</h2>
@@ -125,4 +125,6 @@
       <input type="text" data-action="change->website#advance" class="questioninput">
     </div>
   </div>
-</div>
+
+  <button>Submit</button>
+<% end %>

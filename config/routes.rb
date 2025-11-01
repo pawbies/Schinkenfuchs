@@ -28,7 +28,7 @@ Rails.application.routes.draw do
     get "timeline" => "pages#timeline"
 
     namespace :website do
-      resources :requests, only: :new
+      resources :requests, only: %i[ new create ]
     end
 
     root "pages#homepage"
