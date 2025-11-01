@@ -1,0 +1,22 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+_fixture:
+  model_class: Website::Request
+  name: website_requests
+
+one:
+  title: Testy
+  plan: 1
+  size: 1
+  email_address: requestone@mail.com
+  accepted: false
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+
+two:
+  title: SF
+  plan: 3
+  size: 3
+  email_address: requesttwo@mail.com
+  accepted: false
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>

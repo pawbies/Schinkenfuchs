@@ -4,9 +4,9 @@ class WebsiteRequestsMailer < ApplicationMailer
   #
   #   en.website_requests_mailer.verify.subject
   #
-  def verify(site, email_address)
-    @site = site
+  def verify(website_request)
+    @website_request = website_request
 
-    mail to: email_address
+    mail to: @website_request.email_address
   end
 end
