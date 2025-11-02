@@ -1,19 +1,28 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: Testy
+  title: One
   plan: static
-  size: small
-  email_address: requestone@mail.com
+  size: medium
+  email_address: reqone@example.com
   accepted: false
   created_at: <%= Time.now %>
   updated_at: <%= Time.now %>
 
 two:
+  title: Two
+  plan: dynamic
+  size: small
+  email_address: reqtwo@example.com
+  accepted: true
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+
+three:
   title: SF
   plan: scalable
   size: large
-  email_address: requesttwo@mail.com
+  email_address: reqthree@example.com
   accepted: false
   created_at: <%= Time.now %>
   updated_at: <%= Time.now %>
