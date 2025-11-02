@@ -2,8 +2,8 @@
 
 one:
   title: Testy
-  plan: 1
-  size: 1
+  plan: static
+  size: small
   email_address: requestone@mail.com
   accepted: false
   created_at: <%= Time.now %>
@@ -11,8 +11,8 @@ one:
 
 two:
   title: SF
-  plan: 3
-  size: 3
+  plan: scalable
+  size: large
   email_address: requesttwo@mail.com
   accepted: false
   created_at: <%= Time.now %>

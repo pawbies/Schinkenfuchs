@@ -1,3 +1,10 @@
 Verify your Request
 
-Please verify your request for the website <%= @website_request.title %> by visiting this link:
+Summary of your request:
+Title: <%= @website_request.title %>
+Website Type: <%= @website_request.plan.humanize %>
+Website Size: <%= @website_request.size.humanize %>
+
+
+Please verify your request by visiting this URL:
+<%= new_website_request_verifications_url(request_id: @website_request.id) %>

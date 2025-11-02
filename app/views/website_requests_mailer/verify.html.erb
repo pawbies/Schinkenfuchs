@@ -1,5 +1,21 @@
 <h1>Verify your Request</h1>
 
-<p>
-  Please verify your request for the website <strong><%= @website_request.title %></strong> by clicking the link below:
-</p>
+<section>
+  <h2>Summary of your request</h2>
+  <p>
+    <span>Title: <strong><%= @website_request.title %></strong></span>
+    <br>
+    <span>Website Type: <strong><%= @website_request.plan.humanize %></strong></span>
+    <br>
+    <span>Website Size: <strong><%= @website_request.size.humanize %></strong></span>
+  </p>
+</section>
+
+<hr>
+
+<section>
+  <h2>Verify</h2>
+  <p>
+    Please verify your request by clicking this <%= link_to "link", new_website_request_verifications_url(request_id: @website_request.id) %>.
+  </p>
+</section>
