@@ -9,4 +9,6 @@ class Website::Request < ApplicationRecord
   enum :size, { small: 0, medium: 1, large: 2 }, validate: true
 
   normalizes :email_address, with: ->(e) { e.strip.downcase }
+
+  generates_token_for :verification, expires_in: 1.week
 end

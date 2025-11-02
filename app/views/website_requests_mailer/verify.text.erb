@@ -7,4 +7,4 @@ Website Size: <%= @website_request.size.humanize %>
 
 
 Please verify your request by visiting this URL:
-<%= new_website_request_verifications_url(request_id: @website_request.id) %>
+<%= new_website_request_verifications_url(request_token: @website_request.generate_token_for(:verification)) %>

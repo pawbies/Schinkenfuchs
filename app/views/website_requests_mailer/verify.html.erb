@@ -16,6 +16,7 @@
 <section>
   <h2>Verify</h2>
   <p>
-    Please verify your request by clicking this <%= link_to "link", new_website_request_verifications_url(request_id: @website_request.id) %>.
+    Please verify your request by clicking this
+    <%= link_to "link", new_website_request_verifications_url(request_token: @website_request.generate_token_for(:verification)) %>.
   </p>
 </section>

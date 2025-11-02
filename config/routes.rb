@@ -28,7 +28,7 @@ Rails.application.routes.draw do
     get "timeline" => "pages#timeline"
 
     namespace :website do
-      resources :requests, only: %i[ new create ] do
+      resources :requests, only: %i[ new create ], param: :token do
         resource :verifications, only: %i[ new create ]
       end
     end
