@@ -25,3 +25,11 @@ en:
 
       questions: "Questions? Let's get in touch!"
       request_question: "-> Contact Us <-"
+      subject: "Question or message concerning Schinkenfuchs.com"
+      body_html: |
+        Dear Schinkenfuchs Team,
+        
+        [Your question or message]
+        
+        Best regards,
+        [Your Name]

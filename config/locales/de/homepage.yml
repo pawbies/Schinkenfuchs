@@ -25,3 +25,12 @@ de:
       
       questions: "Fragen? Melde dich bei uns!"
       request_question: "-> Schreibe Uns <-"
+      subject: "Frage oder Nachricht themens Schinkenfuchs.com"
+      body_html: |
+        Liebes Schinkenfuchs Team,
+        
+        [Deine Frage oder Nachricht]
+        
+        Liebe Grüße,
+        [Dein Name]
+

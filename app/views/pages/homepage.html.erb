@@ -121,7 +121,7 @@
            data-controller="reveal"
            data-reveal-class-value="is-visible reveal-slow">
     <span id="hmp-contact-text"> <%= t(".questions") %></span>
-    <%= link_to t(".request_question"), root_path, id: "get-website" %>
+    <%= mail_to "messges@schinkenfuchs.com", t(".request_question"), id: "get-website", subject: t(".subject"), body: t(".body_html") %>
   </section>
 
 </div>
