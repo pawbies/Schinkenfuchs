@@ -40,3 +40,10 @@
 #t-cont {
   gap: 20px
 }
+
+#arrow-process {
+  position: absolute;
+  top: 100px;
+  margin-left: 150px;
+  pointer-events: none;
+}
