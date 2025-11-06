@@ -47,3 +47,24 @@
   margin-left: 150px;
   pointer-events: none;
 }
+
+@media screen and (max-width: 1300px) {
+  #arrow-process {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #arrow-process {
+    display: none;
+  }
+}
+
+#process-t1 { top: 25%; left: 10%; animation-duration: 5s; }
+#process-t2 { top: 30%; left: 25%; animation-name: floatingtrianglemin; animation-duration: 4.3s; }
+#process-t3 { top: 99%; left: 80%; animation-duration: 5s; }
+#process-t4 { top: 75%; left: 75%; animation-name: floatingtrianglemin; animation-duration: 4.3s; }
+#process-t5 { top: 23%; left: 78%; animation-duration: 5s; }
+#process-t6 { top: 74%; left: 10%; animation-name: floatingtrianglemin; animation-duration: 4.3s; }
+#process-t7 { top: 54%; left: 16%; animation-duration: 5s; }
+#process-t8 { top: 42%; left: 90%; animation-name: floatingtrianglemin; animation-duration: 4.3s; }
