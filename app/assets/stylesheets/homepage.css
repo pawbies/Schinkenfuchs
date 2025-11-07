@@ -228,6 +228,10 @@
   font-size: 32px;
 }
 
+.dropshadow {
+  filter: drop-shadow(0 0px 10px rgba(66, 135, 245, 0.5));
+}
+
 @media (max-width: 1024px) {
   #hmp-firstrow {
     flex-direction: column;
