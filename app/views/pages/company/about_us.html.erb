@@ -20,19 +20,22 @@
       <%= image_tag 'shork.png', width: "400", id: "flipped" %>
       <div class="about-textarea">
         <div>
-          <h1>NAME Namen</h1>
-          <span>10x Backend sro</span>
+          <h1>Alexander Fuchs</h1>
+          <span>Backend Developer</span>
         </div>
         <hr>
-        <p>Sum Text Here could be pretty cool <br>
-           is using br ok tho?</p>
-        <p>Also in seperate Paragraphsl</p>
+        <p>Femboy 🌸 <br>
+          IT Person 👾 <br>
+          Bodybuilder (I try) 🌋</p>
+        <p>
+          <iframe src="https://open.spotify.com/embed/track/1W6a8zD86GDwfaahVxIPMC?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </p>
 
         <div class="about-links">
           <p class="no-p-margin">Socials Links:</p>
         
           <div data-controller="bulb-switch">
-            <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
+            <%= link_to "https://github.com/pawbies", target: "_blank", rel: "noopener" do %>
               <%= image_tag 'github-dm.svg',
                 alt: "Github",
                 class: "footer-icon",
@@ -48,31 +51,15 @@
           </div>
 
           <div data-controller="bulb-switch">
-            <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
-              <%= image_tag 'github-dm.svg',
-                alt: "Github",
+            <%= link_to "https://instagram.com/fpawbies", target: "_blank", rel: "noopener" do %>
+              <%= image_tag 'instagram-dm.svg',
+                alt: "Instagram",
                 class: "footer-icon",
                 width: 25, height: 25,
                 data: { bulb_switch_target: "dark" } %>
 
-              <%= image_tag 'github-lm.svg',
-                alt: "Github",
-                class: "footer-icon mode-switch-hidden",
-                width: 25, height: 25,
-                data: { bulb_switch_target: "light" } %>
-            <% end %>
-          </div>
-
-          <div data-controller="bulb-switch">
-            <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
-              <%= image_tag 'github-dm.svg',
-                alt: "Github",
-                class: "footer-icon",
-                width: 25, height: 25,
-                data: { bulb_switch_target: "dark" } %>
-
-              <%= image_tag 'github-lm.svg',
-                alt: "Github",
+              <%= image_tag 'instagram-lm.svg',
+                alt: "Instagram",
                 class: "footer-icon mode-switch-hidden",
                 width: 25, height: 25,
                 data: { bulb_switch_target: "light" } %>
