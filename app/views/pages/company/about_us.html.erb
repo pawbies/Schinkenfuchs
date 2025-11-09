@@ -1,4 +1,18 @@
 <div id="about-cont">
+  <div id="triangle-cont">
+    <%= image_tag 'triangles/3-horiz.svg', id: "t1", class: "triangle" %>
+    <%= image_tag 'triangles/C.svg', id: "t2", class: "triangle" %>
+    <%= image_tag 'triangles/idk.svg', id: "t3", class: "triangle" %>
+    <%= image_tag 'triangles/tallL.svg', id: "t4", class: "triangle" %>
+    <%= image_tag 'triangles/smallhoriz.svg', id: "t5", class: "triangle" %>
+    <%= image_tag 'triangles/smallvert.svg', id: "t6", class: "triangle" %>
+    <%= image_tag 'triangles/L.svg', id: "t7", class: "triangle" %>
+    <%= image_tag 'triangles/questionmrk.svg', id: "t8", class: "triangle" %>
+    <%= image_tag 'triangles/b.svg', id: "t9", class: "triangle" %>
+    <%= image_tag 'triangles/long-topR.svg', id: "t10", class: "triangle" %>
+    <%= image_tag 'triangles/tallL.svg', id: "t11", class: "triangle" %>
+    <%= image_tag 'triangles/3-horiz.svg', id: "t12", class: "triangle" %>
+  </div>
   <span id="about-heading">Let's get to know each other!</span>
 
   <div id="creator-cont">
@@ -7,10 +21,64 @@
       <div class="about-textarea">
         <div>
           <h1>NAME Namen</h1>
-          <span>big boss</span>
+          <span>10x Backend sro</span>
         </div>
         <hr>
-        <p>TExt</p>
+        <p>Sum Text Here could be pretty cool <br>
+           is using br ok tho?</p>
+        <p>Also in seperate Paragraphsl</p>
+
+        <div class="about-links">
+          <p class="no-p-margin">Socials Links:</p>
+        
+          <div data-controller="bulb-switch">
+            <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
+              <%= image_tag 'github-dm.svg',
+                alt: "Github",
+                class: "footer-icon",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "dark" } %>
+
+              <%= image_tag 'github-lm.svg',
+                alt: "Github",
+                class: "footer-icon mode-switch-hidden",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "light" } %>
+            <% end %>
+          </div>
+
+          <div data-controller="bulb-switch">
+            <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
+              <%= image_tag 'github-dm.svg',
+                alt: "Github",
+                class: "footer-icon",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "dark" } %>
+
+              <%= image_tag 'github-lm.svg',
+                alt: "Github",
+                class: "footer-icon mode-switch-hidden",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "light" } %>
+            <% end %>
+          </div>
+
+          <div data-controller="bulb-switch">
+            <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
+              <%= image_tag 'github-dm.svg',
+                alt: "Github",
+                class: "footer-icon",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "dark" } %>
+
+              <%= image_tag 'github-lm.svg',
+                alt: "Github",
+                class: "footer-icon mode-switch-hidden",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "light" } %>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
     <div class="creator-wrap">
@@ -18,10 +86,64 @@
       <div class="about-textarea">
         <div>
           <h1>NAME Namen</h1>
-          <span>big boss</span>
+          <span>0.3x Frontend vro</span>
         </div>
         <hr>
-        <p>TExt</p>
+        <p>Sum Text Here could be pretty cool <br>
+           is using br ok tho?</p>
+        <p>Also in seperate Paragraphsl</p>
+
+        <div class="about-links">
+          <p class="no-p-margin">Socials Links:</p>
+        
+          <div data-controller="bulb-switch">
+            <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
+              <%= image_tag 'github-dm.svg',
+                alt: "Github",
+                class: "footer-icon",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "dark" } %>
+
+              <%= image_tag 'github-lm.svg',
+                alt: "Github",
+                class: "footer-icon mode-switch-hidden",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "light" } %>
+            <% end %>
+          </div>
+
+          <div data-controller="bulb-switch">
+            <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
+              <%= image_tag 'github-dm.svg',
+                alt: "Github",
+                class: "footer-icon",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "dark" } %>
+
+              <%= image_tag 'github-lm.svg',
+                alt: "Github",
+                class: "footer-icon mode-switch-hidden",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "light" } %>
+            <% end %>
+          </div>
+
+          <div data-controller="bulb-switch">
+            <%= link_to "https://github.com/pawbies/Schinkenfuchs", target: "_blank", rel: "noopener" do %>
+              <%= image_tag 'github-dm.svg',
+                alt: "Github",
+                class: "footer-icon",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "dark" } %>
+
+              <%= image_tag 'github-lm.svg',
+                alt: "Github",
+                class: "footer-icon mode-switch-hidden",
+                width: 25, height: 25,
+                data: { bulb_switch_target: "light" } %>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
