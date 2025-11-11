@@ -57,6 +57,9 @@
     </div>
   </section>
 
+
+
+
   <!-- STATIC FORM -->
   <div class="website-form static hidden-site" data-website-target="form">
     <div class="question-cont" data-website-target="question">
@@ -110,19 +113,115 @@
     </div>
   </div>
 
+
+
+
   <!-- DYNAMIC FORM -->
   <div class="website-form dynamic hidden-site" data-website-target="form">
     <div class="question-cont" data-website-target="question">
-      <h1>Dynamic plan question 1</h1>
-      <input type="text" data-action="change->website#advance" class="questioninput">
+      <div class="site-triangle-cont">
+        <%= image_tag 'triangles/smallvert.svg', class: "triangle site-t1" %>
+        <%= image_tag 'triangles/L.svg', class: "triangle site-t2" %>
+        <%= image_tag 'triangles/questionmrk.svg', class: "triangle site-t3" %>
+        <%= image_tag 'triangles/b.svg', class: "triangle site-t4" %>
+      </div>
+      <h1>How big will your site be?</h1>
+      <div class="size-cont">
+        <div class="size-wrap">
+          <input type="radio" name="size_static" value="small" data-action="change->website#advance">
+          <label>Small <span class="size-ex">ex.: Portfolio</span></label>
+        </div>
+        <div class="size-wrap">
+          <input type="radio" name="size_static" value="middle" data-action="change->website#advance">
+          <label>Middle <span class="size-ex">ex.: Infosite</span></label>
+        </div>
+        <div class="size-wrap">
+          <input type="radio" name="size_static" value="big" data-action="change->website#advance">
+          <label>Big <span class="size-ex">ex.: Company-site</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-cont" data-website-target="question">
+      <div class="site-triangle-cont">
+        <%= image_tag 'triangles/long-topR.svg', class: "triangle site-t1" %>
+        <%= image_tag 'triangles/smallvert.svg', class: "triangle site-t2" %>
+        <%= image_tag 'triangles/b.svg', class: "triangle site-t3" %>
+        <%= image_tag 'triangles/L.svg', class: "triangle site-t4" %>
+      </div>
+      <h1>What do you have in mind?</h1>
+      <div class="size-cont">
+        <input type="text" placeholder="A Site for ____" data-action="change->website#advance" class="questioninput">
+      </div>
+    </div>
+
+    <div class="question-cont" data-website-target="question">
+      <div class="site-triangle-cont">
+        <%= image_tag 'triangles/3-horiz.svg', class: "triangle site-t1" %>
+        <%= image_tag 'triangles/idk.svg', class: "triangle site-t2" %>
+        <%= image_tag 'triangles/tallL.svg', class: "triangle site-t3" %>
+        <%= image_tag 'triangles/C.svg', class: "triangle site-t4" %>
+      </div>
+      <h1>Other wishes?</h1>
+      <div class="size-cont">
+        <textarea placeholder="Write your mind" data-action="change->website#advance" class="questionarea"></textarea>
+      </div>
     </div>
   </div>
+
+
+
 
   <!-- SCALABLE FORM -->
   <div class="website-form scalable hidden-site" data-website-target="form">
     <div class="question-cont" data-website-target="question">
-      <h1>Scalable plan question 1</h1>
-      <input type="text" data-action="change->website#advance" class="questioninput">
+      <div class="site-triangle-cont">
+        <%= image_tag 'triangles/smallvert.svg', class: "triangle site-t1" %>
+        <%= image_tag 'triangles/L.svg', class: "triangle site-t2" %>
+        <%= image_tag 'triangles/questionmrk.svg', class: "triangle site-t3" %>
+        <%= image_tag 'triangles/b.svg', class: "triangle site-t4" %>
+      </div>
+      <h1>How big will your site be?</h1>
+      <div class="size-cont">
+        <div class="size-wrap">
+          <input type="radio" name="size_static" value="small" data-action="change->website#advance">
+          <label>Small <span class="size-ex">ex.: Portfolio</span></label>
+        </div>
+        <div class="size-wrap">
+          <input type="radio" name="size_static" value="middle" data-action="change->website#advance">
+          <label>Middle <span class="size-ex">ex.: Infosite</span></label>
+        </div>
+        <div class="size-wrap">
+          <input type="radio" name="size_static" value="big" data-action="change->website#advance">
+          <label>Big <span class="size-ex">ex.: Company-site</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-cont" data-website-target="question">
+      <div class="site-triangle-cont">
+        <%= image_tag 'triangles/long-topR.svg', class: "triangle site-t1" %>
+        <%= image_tag 'triangles/smallvert.svg', class: "triangle site-t2" %>
+        <%= image_tag 'triangles/b.svg', class: "triangle site-t3" %>
+        <%= image_tag 'triangles/L.svg', class: "triangle site-t4" %>
+      </div>
+      <h1>What do you have in mind?</h1>
+      <div class="size-cont">
+        <input type="text" placeholder="A Site for ____" data-action="change->website#advance" class="questioninput">
+      </div>
+    </div>
+
+    <div class="question-cont" data-website-target="question">
+      <div class="site-triangle-cont">
+        <%= image_tag 'triangles/3-horiz.svg', class: "triangle site-t1" %>
+        <%= image_tag 'triangles/idk.svg', class: "triangle site-t2" %>
+        <%= image_tag 'triangles/tallL.svg', class: "triangle site-t3" %>
+        <%= image_tag 'triangles/C.svg', class: "triangle site-t4" %>
+      </div>
+      <h1>Other wishes?</h1>
+      <div class="size-cont">
+        <textarea placeholder="Write your mind" data-action="change->website#advance" class="questionarea"></textarea>
+      </div>
     </div>
   </div>
 
