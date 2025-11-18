@@ -2,6 +2,7 @@
 
 <%= form_with model: @website_request, id: "newsite-form", data: { controller: "website" } do %>
   <section data-controller="reveal" data-reveal-class="is-visible" class="reveal pricing">
+    <label for="static-site">
     <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
       <h2>STATIC</h2>
       <div class="hmp-desc">
@@ -19,7 +20,10 @@
       </ul>
       <button type="button">Choose plan</button>
     </div>
+    </label>
+    <input type="radio" name="choose-site" id="static-site" class="hidden">
 
+    <label for="dynamic-site">
     <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
       <h2>DYNAMIC</h2>
       <div class="hmp-desc">
@@ -37,7 +41,10 @@
       </ul>
       <button type="button">Most popular</button>
     </div>
+    </label>
+    <input type="radio" name="choose-site" id="dynamic-site" class="hidden">
 
+    <label for="dynamic-site">
     <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
       <h2>Scalable</h2>
       <div class="hmp-desc">
@@ -55,6 +62,8 @@
       </ul>
       <button type="button">Choose plan</button>
     </div>
+    </label>
+    <input type="radio" name="choose-site" id="scalable-site" class="hidden">
   </section>
 
 
@@ -128,15 +137,15 @@
       <h1>How big will your site be?</h1>
       <div class="size-cont">
         <div class="size-wrap">
-          <input type="radio" name="size_static" value="small" data-action="change->website#advance">
+          <input type="radio" name="size_dynamic" value="small" data-action="change->website#advance">
           <label>Small <span class="size-ex">ex.: Portfolio</span></label>
         </div>
         <div class="size-wrap">
-          <input type="radio" name="size_static" value="middle" data-action="change->website#advance">
+          <input type="radio" name="size_dynamic" value="middle" data-action="change->website#advance">
           <label>Middle <span class="size-ex">ex.: Infosite</span></label>
         </div>
         <div class="size-wrap">
-          <input type="radio" name="size_static" value="big" data-action="change->website#advance">
+          <input type="radio" name="size_dynamic" value="big" data-action="change->website#advance">
           <label>Big <span class="size-ex">ex.: Company-site</span></label>
         </div>
       </div>
@@ -184,15 +193,15 @@
       <h1>How big will your site be?</h1>
       <div class="size-cont">
         <div class="size-wrap">
-          <input type="radio" name="size_static" value="small" data-action="change->website#advance">
+          <input type="radio" name="size_scalable" value="small" data-action="change->website#advance">
           <label>Small <span class="size-ex">ex.: Portfolio</span></label>
         </div>
         <div class="size-wrap">
-          <input type="radio" name="size_static" value="middle" data-action="change->website#advance">
+          <input type="radio" name="size_scalable" value="middle" data-action="change->website#advance">
           <label>Middle <span class="size-ex">ex.: Infosite</span></label>
         </div>
         <div class="size-wrap">
-          <input type="radio" name="size_static" value="big" data-action="change->website#advance">
+          <input type="radio" name="size_scalable" value="big" data-action="change->website#advance">
           <label>Big <span class="size-ex">ex.: Company-site</span></label>
         </div>
       </div>
