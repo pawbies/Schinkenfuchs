@@ -34,8 +34,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_11_01_191427) do
     t.string "title", null: false
     t.integer "plan", null: false
     t.integer "size", null: false
+    t.text "description", limit: 500, null: false
     t.string "email_address", null: false
-    t.boolean "accepted", default: false
+    t.integer "status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
