@@ -21,14 +21,9 @@ export default class extends Controller {
       c.classList.toggle("is-active", c === card);
     });
 
-    this.formTargets.forEach(form => {
-      if (form.classList.contains(planName)) {
-        form.classList.remove("hidden-site");
-        form.scrollIntoView({ behavior: "smooth" });
-      } else {
-        form.classList.add("hidden-site");
-      }
-    });
+    this.formTarget.classList.remove("hidden-site");
+    this.formTarget.scrollIntoView({ behavior: "smooth" });
+
   }
 
   revealform(e) {
@@ -41,15 +36,9 @@ export default class extends Controller {
     });
 
     // make the right one visible
-    this.formTargets.forEach(form => {
-      if (form.classList.contains(planName)) {
-        form.classList.remove("hidden-site");
-        //cccrrazy method
-        form.scrollIntoView({ behavior: "smooth" });
-      } else {
-        form.classList.add("hidden-site");
-      }
-    });
+    this.formTarget.classList.remove("hidden-site");
+    this.formTarget.scrollIntoView({ behavior: "smooth" });
+
   }
 
   advance(e) {
