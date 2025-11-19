@@ -119,6 +119,20 @@
         <textarea placeholder="Write your mind" data-action="change->website#advance" class="questionarea"></textarea>
       </div>
     </div>
+
+    <div class="question-cont" data-website-target="question">
+      <div class="site-triangle-cont">
+        <%= image_tag 'triangles/3-horiz.svg', class: "triangle site-t1" %>
+        <%= image_tag 'triangles/idk.svg', class: "triangle site-t2" %>
+        <%= image_tag 'triangles/tallL.svg', class: "triangle site-t3" %>
+        <%= image_tag 'triangles/C.svg', class: "triangle site-t4" %>
+      </div>
+      <h1>E-Mail</h1>
+      <div class="size-cont">
+        <input type="email" placeholder="E-Mail" data-action="change->website#advance" class="questioninput">
+      </div>
+    </div>
+
     <button id="submit-site">Submit</button>
   </div>
 <% end %>
