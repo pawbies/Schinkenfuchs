@@ -1,6 +1,16 @@
 <div id="hmp-spacer"></div>
 
 <%= form_with model: @website_request, id: "newsite-form", data: { controller: "website" } do |form| %>
+
+  <% if @website_request.errors.any? %>
+    <h2>Could not save project due to those errors:</h2>
+    <ul>
+    <% @website_request.errors.full_messages.each do |message| %>
+     <li><%= message %></li> 
+    <% end %>
+    </ul>
+  <% end %>
+
   <section data-controller="reveal" data-reveal-class="is-visible" class="reveal pricing">
     <%= form.label :plan, value: "static" do %>
     <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
