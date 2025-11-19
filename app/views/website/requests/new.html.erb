@@ -1,8 +1,8 @@
 <div id="hmp-spacer"></div>
 
-<%= form_with model: @website_request, id: "newsite-form", data: { controller: "website" } do %>
+<%= form_with model: @website_request, id: "newsite-form", data: { controller: "website" } do |form| %>
   <section data-controller="reveal" data-reveal-class="is-visible" class="reveal pricing">
-    <label for="static-site">
+    <%= form.label :plan, value: "static" do %>
     <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
       <h2>STATIC</h2>
       <div class="hmp-desc">
@@ -20,10 +20,10 @@
       </ul>
       <button type="button">Choose plan</button>
     </div>
-    </label>
-    <input type="radio" name="choose-site" id="static-site" class="hidden">
+    <% end %>
+    <%= form.radio_button :plan, "static", class: "hidden" %>
 
-    <label for="dynamic-site">
+    <%= form.label :plan, value: "dynamic" do %>
     <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
       <h2>DYNAMIC</h2>
       <div class="hmp-desc">
@@ -41,10 +41,10 @@
       </ul>
       <button type="button">Most popular</button>
     </div>
-    </label>
-    <input type="radio" name="choose-site" id="dynamic-site" class="hidden">
+    <% end %>
+    <%= form.radio_button :plan, "dynamic", class: "hidden" %>
 
-    <label for="dynamic-site">
+    <%= form.label :plan, value: "scalable" do %>
     <div class="hmp-card" data-website-target="card" data-action="click->website#revealform">
       <h2>Scalable</h2>
       <div class="hmp-desc">
@@ -62,8 +62,8 @@
       </ul>
       <button type="button">Choose plan</button>
     </div>
-    </label>
-    <input type="radio" name="choose-site" id="scalable-site" class="hidden">
+    <% end %>
+    <%= form.radio_button :plan, "scalable", class: "hidden" %>
   </section>
 
 
@@ -80,16 +80,22 @@
       <h1>How big will your site be?</h1>
       <div class="size-cont">
         <div class="size-wrap">
-          <input type="radio" name="size_static" value="small" data-action="change->website#advance">
-          <label>Small <span class="size-ex">ex.: Portfolio</span></label>
+          <%= form.radio_button :size, "small", data: { action: "change->website#advance" } %>
+          <%= form.label :size, value: "small" do %>
+            Small <span class="size-ex">ex.: Portfolio</span>
+          <% end%>
         </div>
         <div class="size-wrap">
-          <input type="radio" name="size_static" value="middle" data-action="change->website#advance">
-          <label>Middle <span class="size-ex">ex.: Infosite</span></label>
+          <%= form.radio_button :size, "medium", data: { action: "change->website#advance" } %>
+          <%= form.label :size, value: "medium" do %>
+            Medium <span class="size-ex">ex.: Infosite</span>
+          <% end%>
         </div>
         <div class="size-wrap">
-          <input type="radio" name="size_static" value="big" data-action="change->website#advance">
-          <label>Big <span class="size-ex">ex.: Company-site</span></label>
+          <%= form.radio_button :size, "large", data: { action: "change->website#advance" } %>
+          <%= form.label :size, value: "large" do %>
+            Large <span class="size-ex">ex.: Compancy-site</span>
+          <% end%>
         </div>
       </div>
     </div>
@@ -103,7 +109,7 @@
       </div>
       <h1>What do you have in mind?</h1>
       <div class="size-cont">
-        <input type="text" placeholder="A Site for ____" data-action="change->website#advance" class="questioninput">
+        <%= form.text_field :title, placeholder: "A site for...", data: { action: "change->website#advance" }, class: "questioninput" %>
       </div>
     </div>
 
@@ -116,7 +122,7 @@
       </div>
       <h1>Other wishes?</h1>
       <div class="size-cont">
-        <textarea placeholder="Write your mind" data-action="change->website#advance" class="questionarea"></textarea>
+        <%= form.text_area :description, placeholder: "Write your mind", data: { action: "change->website#advance" }, class: "questionarea" %>
       </div>
     </div>
 
@@ -129,7 +135,7 @@
       </div>
       <h1>E-Mail</h1>
       <div class="size-cont">
-        <input type="email" placeholder="E-Mail" data-action="change->website#advance" class="questioninput">
+        <%= form.email_field :email_address, placeholder: "E-Mail", data: { action: "change->website#advance" }, class: "questioninput" %>
       </div>
     </div>
 
