@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_11_01_191427) do
+ActiveRecord::Schema[8.0].define(version: 2025_11_20_151902) do
   create_table "sessions", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "ip_address"
@@ -39,6 +39,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_11_01_191427) do
     t.integer "status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "verified", default: false, null: false
   end
 
   add_foreign_key "sessions", "users"

@@ -11,7 +11,7 @@ class Website::VerificationsController < ApplicationController
     if params[:accepted_tos] != "1"
       flash.now[:alert] = "Please accept the TOS to continue."
       render :new, status: :forbidden
-    elsif @user.save
+    elsif @user.save && @website_request.update(verified: true)
       # TODO: link request to user
       redirect_to root_path, notice: "Your request is now being processed, check the status with your login credentials."
     else
