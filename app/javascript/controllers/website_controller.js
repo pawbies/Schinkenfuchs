@@ -11,17 +11,21 @@ export default class extends Controller {
     }
 
     this.element.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      const target = e.target;
+      if (e.key === "Enter") {
+        const target = e.target;
 
-      e.preventDefault();
-      e.stopPropagation();
+        e.preventDefault();
+        e.stopPropagation();
 
-      target.blur();
+        target.blur();
 
-      this.advance({ target });
+        this.advance({ target });
+      }
+    });
+
+    if (this.element.querySelector(".field_with_errors")) {
+      this.formTarget.classList.remove("hidden-site");
     }
-  });
   }
 
   showPlan(planName) {
