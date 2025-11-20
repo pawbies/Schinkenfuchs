@@ -79,3 +79,10 @@
   display: flex;
   gap: 1em;
 }
+
+#about-bigtext {
+  font-size: 52px;
+  color: var(--text-color);
+  font-weight: 200;
+  margin: 240px 0;
+}

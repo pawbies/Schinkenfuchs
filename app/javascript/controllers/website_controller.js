@@ -9,6 +9,19 @@ export default class extends Controller {
     if (plan) {
       requestAnimationFrame(() => this.showPlan(plan));
     }
+
+    this.element.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      const target = e.target;
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      target.blur();
+
+      this.advance({ target });
+    }
+  });
   }
 
   showPlan(planName) {
@@ -16,6 +29,9 @@ export default class extends Controller {
       c => c.querySelector("h2").innerText.trim().toLowerCase() === planName
     );
     if (!card) return;
+
+    const radio = document.querySelector(`input[type="radio"][name="website_request[plan]"][value="${planName}"]`);
+    if (radio) radio.checked = true;
 
     this.cardTargets.forEach(c => {
       c.classList.toggle("is-active", c === card);
