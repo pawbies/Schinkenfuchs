@@ -23,6 +23,7 @@ class Website::VerificationsController < ApplicationController
     def get_request_by_token
       begin
         @website_request = Website::Request.find_by_token_for!(:verification, params[:request_token])
+        redirect_back fallback_location: root_path, alert: "Request was already verified." if @website_request.verified
       rescue ActiveSupport::MessageVerifier::InvalidSignature
         redirect_back fallback_location: root_path, alert: "Invalid or expired token."
       end
