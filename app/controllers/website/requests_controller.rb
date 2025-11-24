@@ -6,7 +6,7 @@ class Website::RequestsController < ApplicationController
   end
 
   def create
-    @website_request = Website::Request.new(**website_request_params, status: "pending", verified: false)
+    @website_request = Website::Request.new(**website_request_params, status: "pending", verified: false, user: nil)
 
     if @website_request.save
       redirect_to root_path, notice: "Thank you for your request, you will receive an email to verify it shortly"

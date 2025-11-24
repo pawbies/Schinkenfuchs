@@ -9,8 +9,7 @@
     <%= link_to t(".about"), about_us_path, class: "nav-link" %>
     <div class="nav-dot"></div>
     <% if authenticated? %>
-      <%= link_to t(".dashboard"), root_path, class: "nav-link" %>
-      <%= button_to "Logout - just for testing", session_path, method: :delete %>
+      <%= button_to "Logout - just for testing", session_path, method: :delete, class: "nav-link" %>
     <% else %>
       <%= link_to t(".login"), new_session_path, class: "nav-link" %>
     <% end %>
@@ -49,7 +48,11 @@
       width: 150, height: 150,
       data: { action: "click->bulb-switch#dark", bulb_switch_target: "light" } %>
 
-    <%= link_to t(".request_website"), new_website_request_path, id: "get-website" %>
+    <% unless authenticated? %>
+      <%= link_to t(".request_website"), new_website_request_path, id: "get-website" %>
+    <% else %>
+      <%= link_to t(".dashboard"), root_path, id: "get-website" %>
+    <% end %>
   </div>
 </nav>
 

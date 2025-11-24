@@ -1,4 +1,6 @@
 class Website::Request < ApplicationRecord
+  belongs_to :user, optional: true
+
   validates :title, presence: true
   validates :plan, presence: true
   validates :size, presence: true
