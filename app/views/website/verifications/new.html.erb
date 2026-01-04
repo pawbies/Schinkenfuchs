@@ -1,27 +1,52 @@
-<h1><%= @website_request.title %></h1>
+<div id="auth-container" data-controller="fade">
+  <div id="triangle-cont-login">
+    <%= image_tag 'triangles/tallL.svg', id: "login-t1", class: "triangle" %>
+    <%= image_tag 'triangles/smallhoriz.svg', id: "login-t2", class: "triangle" %>
+    <%= image_tag 'triangles/smallvert.svg', id: "login-t3", class: "triangle" %>
+    <%= image_tag 'triangles/L.svg', id: "login-t4", class: "triangle" %>
+  </div>
+  <div id="auth-text-cont" data-fade-target="elem" class="login-fade signin-stay">
+    <h1>You're almost done!</h1>
+    <span>This close 🤏</span>
+  </div>
 
-<%= tag.div(flash[:alert], class: "auth-alert") if flash[:alert] %>
-<%= tag.div(flash[:notice], class: "auth-notice") if flash[:notice] %>
+  <div data-fade-target="elem" class="login-fade auth-wrap signin-stay">
+    <h2><%= @website_request.title %></h2>
 
-<%= form_with url: website_request_verifications_path do |form| %>
-  <% if @user.errors.any? %>
-    <h2>User could not be saved due to those errors:</h2>
-    <% @user.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
+    <%= tag.div(flash[:alert], class: "auth-alert") if flash[:alert] %>
+    <%= tag.div(flash[:notice], class: "auth-notice") if flash[:notice] %>
+
+    <%= form_with url: website_request_verifications_path, class: "auth-form" do |form| %>
+      <% if @user.errors.any? %>
+        <h2>User could not be saved due to those errors:</h2>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      <% end %>
+      <%= form.hidden_field :request_token, value: params[:request_token] %><br>
+
+      <%= fields_for :user do |user_fields| %>
+        <div class="auth-field">
+          <%= user_fields.text_field :username, placeholder: "Username" %><br>
+        </div>
+        <div class="auth-field">
+          <%= user_fields.password_field :password, placeholder: "Your Password" %><br>
+        </div>
+        <div class="auth-field">
+          <%= user_fields.password_field :password_confirmation, placeholder: "Repeat your password" %><br>
+        </div>
+      <% end %>
+
+      <div id="auth-links">
+        <%= form.label :accepted_tos do %>
+          I have read and accept the <%= link_to "TOS", tos_path, target: "_blank", id: "link_tos_vrf" %>
+        <% end %>
+        <%= form.check_box :accepted_tos %>
+      </div>
+
+      <%= form.submit "Verify your request", id: "auth-button" %>
     <% end %>
-  <% end %>
-  <%= form.hidden_field :request_token, value: params[:request_token] %><br>
-
-  <%= fields_for :user do |user_fields| %>
-    <%= user_fields.text_field :username, placeholder: "Username" %><br>
-    <%= user_fields.password_field :password, placeholder: "Your Password" %><br>
-    <%= user_fields.password_field :password_confirmation, placeholder: "Repeat your password" %><br>
-  <% end %>
-
-  <%= form.label :accepted_tos do %>
-    I have read and accept the <%= link_to "TOS", tos_path, target: "_blank" %>
-  <% end %>
-  <%= form.check_box :accepted_tos %><br>
-
-  <%= form.submit "Verify your request" %>
-<% end %>
+  </div>
+  <div data-fade-target="elem" class="login-fade pwd-hidden auth-wrap pwd-wrap">
+  </div>
+</div>

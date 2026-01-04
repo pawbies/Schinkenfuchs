@@ -26,8 +26,6 @@
         <span id="desclaimer-text"><%= t(".disclaimer") %></span>
       </div>
     <% end %>
-    
-
   </div>
 
   <div id="hmp-spacer"></div>
@@ -89,12 +87,12 @@
   </section>
 
   <section id="hmp-about">
-    <%# path aint here %>
-    <%= link_to timeline_path, class: "hmp-about-cont reveal", data: { controller: "reveal" } do %>
-      <%= image_tag 'portfolio-dm.svg', width: 50, height: 50 %>
+    <%# hmp-about-cont reveal to classes if its fin 
+    <%= link_to timeline_path, class: "hidden", data: { controller: "reveal" } do percent>
+      <%= image_tag 'portfolio-dm.svg', width: 50, height: 50 percent>
       <div class="hmp-about-text-wrap">
-        <span class="hmp-about-text"><%= t(".about.timeline") %></span>
-        <span class="hmp-about-subtext"><%= t(".about.recent_work") %></span>
+        <span class="hmp-about-text"><%= t(".about.timeline") percent></span>
+        <span class="hmp-about-subtext"><%= t(".about.recent_work") percent></span>
       </div>
     <% end %>
 

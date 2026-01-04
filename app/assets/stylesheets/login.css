@@ -78,6 +78,12 @@
   opacity: 0.8;
 }
 
+#link_tos_vrf {
+  color: var(--blue) !important;
+  opacity: 1 !important;
+  text-decoration: underline !important;
+}
+
 .auth-alert { color: #f87171; margin: 0.5rem 0; }
 .auth-notice { color: var(--blue); margin: 0.5rem 0; }
 
