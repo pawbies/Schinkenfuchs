@@ -3,12 +3,14 @@
 <%= form_with model: @website_request, id: "newsite-form", data: { controller: "website" } do |form| %>
 
   <% if @website_request.errors.any? %>
-    <h2>Could not save project due to those errors:</h2>
-    <ul>
-    <% @website_request.errors.full_messages.each do |message| %>
-     <li><%= message %></li> 
-    <% end %>
-    </ul>
+    <div class="form-errors">
+      <h2>Please correct the following errors:</h2>
+      <ul>
+      <% @website_request.errors.full_messages.each do |message| %>
+       <li><%= message %></li> 
+      <% end %>
+      </ul>
+    </div>
   <% end %>
 
   <section data-controller="reveal" data-reveal-class="is-visible" class="reveal pricing">
@@ -87,26 +89,30 @@
         <%= image_tag 'triangles/questionmrk.svg', class: "triangle site-t3" %>
         <%= image_tag 'triangles/b.svg', class: "triangle site-t4" %>
       </div>
-      <h1>How big will your site be?</h1>
+      <h1 class="question-title">How big will your site be?</h1>
+      <p class="question-subtitle">Select the size that best fits your project needs</p>
       <div class="size-cont">
-        <div class="size-wrap">
+        <label class="size-option">
           <%= form.radio_button :size, "small", data: { action: "change->website#advance" } %>
-          <%= form.label :size, value: "small" do %>
-            Small <span class="size-ex">ex.: Portfolio</span>
-          <% end%>
-        </div>
-        <div class="size-wrap">
+          <div class="size-option-content">
+            <span class="size-label">Small</span>
+            <span class="size-ex">ex.: Portfolio</span>
+          </div>
+        </label>
+        <label class="size-option">
           <%= form.radio_button :size, "medium", data: { action: "change->website#advance" } %>
-          <%= form.label :size, value: "medium" do %>
-            Medium <span class="size-ex">ex.: Infosite</span>
-          <% end%>
-        </div>
-        <div class="size-wrap">
+          <div class="size-option-content">
+            <span class="size-label">Medium</span>
+            <span class="size-ex">ex.: Infosite</span>
+          </div>
+        </label>
+        <label class="size-option">
           <%= form.radio_button :size, "large", data: { action: "change->website#advance" } %>
-          <%= form.label :size, value: "large" do %>
-            Large <span class="size-ex">ex.: Compancy-site</span>
-          <% end%>
-        </div>
+          <div class="size-option-content">
+            <span class="size-label">Large</span>
+            <span class="size-ex">ex.: Company site</span>
+          </div>
+        </label>
       </div>
     </div>
 
@@ -117,9 +123,10 @@
         <%= image_tag 'triangles/b.svg', class: "triangle site-t3" %>
         <%= image_tag 'triangles/L.svg', class: "triangle site-t4" %>
       </div>
-      <h1>What do you have in mind?</h1>
+      <h1 class="question-title">What do you have in mind?</h1>
+      <p class="question-subtitle">Describe your project vision</p>
       <div class="size-cont">
-        <%= form.text_field :title, placeholder: "A site for...", data: { action: "change->website#advance" }, class: "questioninput" %>
+        <%= form.text_field :title, placeholder: "e.g., A portfolio website for my photography work", data: { action: "change->website#advance" }, class: "questioninput" %>
       </div>
     </div>
 
@@ -130,9 +137,10 @@
         <%= image_tag 'triangles/tallL.svg', class: "triangle site-t3" %>
         <%= image_tag 'triangles/C.svg', class: "triangle site-t4" %>
       </div>
-      <h1>Other wishes?</h1>
+      <h1 class="question-title">Additional requirements?</h1>
+      <p class="question-subtitle">Any specific features or preferences you'd like to mention</p>
       <div class="size-cont">
-        <%= form.text_area :description, placeholder: "Write your mind", data: { action: "change->website#advance" }, class: "questionarea" %>
+        <%= form.text_area :description, placeholder: "Tell us about any specific features, design preferences, or requirements...", data: { action: "change->website#advance" }, class: "questionarea", rows: 5 %>
       </div>
     </div>
 
@@ -143,12 +151,15 @@
         <%= image_tag 'triangles/tallL.svg', class: "triangle site-t3" %>
         <%= image_tag 'triangles/C.svg', class: "triangle site-t4" %>
       </div>
-      <h1>E-Mail</h1>
+      <h1 class="question-title">Contact Information</h1>
+      <p class="question-subtitle">We'll use this to get in touch with you</p>
       <div class="size-cont">
-        <%= form.email_field :email_address, placeholder: "E-Mail", data: { action: "change->website#advance" }, class: "questioninput" %>
+        <%= form.email_field :email_address, placeholder: "your.email@example.com", data: { action: "change->website#advance" }, class: "questioninput" %>
       </div>
     </div>
 
-    <button id="submit-site">Submit</button>
+    <button type="submit" id="submit-site">
+      <span>Submit Request</span>
+    </button>
   </div>
 <% end %>
