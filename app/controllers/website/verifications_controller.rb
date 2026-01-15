@@ -6,16 +6,23 @@ class Website::VerificationsController < ApplicationController
     @user = User.new
   end
 
+  TOS_ACCEPTED = "1"
+
   def create
     @user = User.new(**user_params, email_address: @website_request.email_address, role: "user")
-    if params[:accepted_tos] != "1"
+    if params[:accepted_tos] != TOS_ACCEPTED
       flash.now[:alert] = "Please accept the TOS to continue."
       render :new, status: :forbidden
-    elsif @user.save && @website_request.update(verified: true, user: @user)
-      start_new_session_for @user
-      redirect_to root_path, notice: "Your request is now being processed, check the status with your login credentials."
     else
-      render :new, status: :unprocessable_content
+      User.transaction do
+        if @user.save && @website_request.update(verified: true, user: @user)
+          start_new_session_for @user
+          redirect_to root_path, notice: "Your request is now being processed, check the status with your login credentials."
+        else
+          render :new, status: :unprocessable_content
+          raise ActiveRecord::Rollback
+        end
+      end
     end
   end
 
